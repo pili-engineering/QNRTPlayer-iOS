@@ -1,0 +1,40 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Bugsnag (5.15.4)
+  - PLMediaStreamingKit (3.0.2):
+    - PLMediaStreamingKit/iphoneos (= 3.0.2)
+  - PLMediaStreamingKit/iphoneos (3.0.2)
+
+DEPENDENCIES:
+  - BlocksKit (= 2.2.5)
+  - Bugsnag (= 5.15.4)
+  - PLMediaStreamingKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BlocksKit
+    - Bugsnag
+    - PLMediaStreamingKit
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Bugsnag: df1d395695ddf795aa35c23ef4eaef4a04ddcffd
+  PLMediaStreamingKit: 20e0dac77a93e488c8b06bfabf8fdb0fc61f07b5
+
+PODFILE CHECKSUM: e6e428df546856c83ad630a7a2a5ad9e48c2283a
+
+COCOAPODS: 1.7.5
