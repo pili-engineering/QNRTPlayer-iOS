@@ -1,0 +1,6 @@
+framework module QNRTPlayerKit {
+  umbrella header "QNRTPlayerKit.h"
+
+  export *
+  module * { export * }
+}

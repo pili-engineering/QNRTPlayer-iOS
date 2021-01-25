@@ -16,6 +16,15 @@
 			);
 			name = PLMediaStreamingKit;
 		};
+		FAFF1D40A1F3F075D96CE12E7C40342E /* QNRTPlayerKit */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D08FE4744F7A102F6FB4F91BB4C1ECDE /* Build configuration list for PBXAggregateTarget "QNRTPlayerKit" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = QNRTPlayerKit;
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
@@ -79,6 +88,7 @@
 		45B814C647139B9AFE849AEC43AE89AA /* NSOrderedSet+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F544A844D6AE72667A57F172D661F931 /* NSOrderedSet+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		45D959E6BE0260DC91E8EE1E32AF943C /* BSG_KSCrashSentry_Deadlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D4EA8B613AD7F07EEF03197F85F0CC /* BSG_KSCrashSentry_Deadlock.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4C33B9C280A92953A4467B3C32061D1D /* BugsnagSessionTrackingPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C12E8DA283E9957956D47F21680736 /* BugsnagSessionTrackingPayload.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4DE4C93628256B0F82177EFA89628090 /* Pods-QNRTNiuLiving-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 550EFC6F8DB9DBD9FA8D1524A9B8EAC5 /* Pods-QNRTNiuLiving-dummy.m */; };
 		4ECE034ED063E52243C682B6702D6261 /* NSObject+A2BlockDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE05BB9D4688D684A5BED8C3FB957AF5 /* NSObject+A2BlockDelegate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4EF3747FDC6CB2681EEE334A0FA2D0EA /* BSG_KSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5999A49A8C68E20BBC9BD7CF4A5971B1 /* BSG_KSCrashReportWriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5048F075FA25FF298B69176CD277C8BC /* BugsnagErrorReportApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 959B4C2588DE68EAA2A9E4B41D9D993C /* BugsnagErrorReportApiClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -147,7 +157,6 @@
 		9B1E9CAF41282720CB49B08E0B6F6C14 /* NSError+BSG_SimpleConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C007026FD29652E12BA49176517B56 /* NSError+BSG_SimpleConstructor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9CF2822B59AF3F10DC6C8C0DA71ACEB3 /* UIBarButtonItem+BlocksKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D5D5A1D9E672470EF74E42F305A79ABF /* UIBarButtonItem+BlocksKit.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9D24C2CA342464F72E9645AE9084D6A4 /* BugsnagUser.h in Headers */ = {isa = PBXBuildFile; fileRef = A1980B9B58FA0579BC6E1FC328989F02 /* BugsnagUser.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A114D14DDEE89239DA6E9596AF593988 /* Pods-QNRTNiuLiving-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 550EFC6F8DB9DBD9FA8D1524A9B8EAC5 /* Pods-QNRTNiuLiving-dummy.m */; };
 		A1289CD11846663BD7109185193C4B82 /* BugsnagLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A8F742CA245B4CE53972A9A50B2BD5F3 /* BugsnagLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A1C2F729CA67F293EAC4AE77C0DD3201 /* NSOrderedSet+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F1AC159F3B9896C7C7B52AC2CED3D8 /* NSOrderedSet+BlocksKit.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A2DEE566030C77DF1397A3C1FB6A16FA /* BugsnagSessionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC0C93B9EB2D76E192D487605704865 /* BugsnagSessionTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -224,21 +233,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3CB299B482B0995C43136B802D8DA28C /* PBXContainerItemProxy */ = {
+		17A8EA616E0BD0370F0D9D06674060DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BDC8B0769B39E03BE257939D6FD4D966;
 			remoteInfo = Bugsnag;
 		};
-		864E0B24ECF7A2E3DDB4AF8DFC94D714 /* PBXContainerItemProxy */ = {
+		3FA8803382C3004A64D58DECC7CE7E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFF1D40A1F3F075D96CE12E7C40342E;
+			remoteInfo = QNRTPlayerKit;
+		};
+		E1FC72A998FC1992DA18A9C1E561860A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B2777DC549C19A310651FBD3C87B71DF;
 			remoteInfo = BlocksKit;
 		};
-		BA0781CECA11D18C5874BFDC375956A5 /* PBXContainerItemProxy */ = {
+		ECCE42C8F5907C1121593199AC19C006 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -255,9 +271,11 @@
 		012502B21D00E79634B79EAA443D070E /* NSObject+BKBlockObservation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+BKBlockObservation.m"; path = "BlocksKit/Core/NSObject+BKBlockObservation.m"; sourceTree = "<group>"; };
 		02CCCACB697F4498321B09BAB881D175 /* BugsnagBreadcrumb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagBreadcrumb.h; path = Source/BugsnagBreadcrumb.h; sourceTree = "<group>"; };
 		03499BB2F332576A8EB0BAEBB45E11B6 /* BSG_KSBacktrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSBacktrace.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSBacktrace.h; sourceTree = "<group>"; };
+		06D5F82296474044E154C32AF5F83697 /* QNRTPlayerKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QNRTPlayerKit.xcconfig; sourceTree = "<group>"; };
 		087218A9F3E3B57EDCA1EF8DC715240B /* BugsnagCollections.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagCollections.m; path = Source/BugsnagCollections.m; sourceTree = "<group>"; };
 		0B705E83AC64555B1A834865E8EA8409 /* libPods-QNRTNiuLiving.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-QNRTNiuLiving.a"; path = "libPods-QNRTNiuLiving.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C119E78B1AFA942E25D85295444D035 /* A2BlockInvocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A2BlockInvocation.h; path = BlocksKit/DynamicDelegate/A2BlockInvocation.h; sourceTree = "<group>"; };
+		0C3A4AEA5CDC67CA52CDCC5D4C33BBA7 /* QNRTPlayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QNRTPlayerKit.framework; path = Pod/iphoneos/QNRTPlayerKit.framework; sourceTree = "<group>"; };
 		0DD6EE8A55257E73E3D8C09A4002BC56 /* BSG_KSCrashSentry_Signal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashSentry_Signal.h; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_Signal.h; sourceTree = "<group>"; };
 		0F915521F5330764223B2874DBC9C6D5 /* BugsnagErrorReportApiClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagErrorReportApiClient.m; path = Source/BugsnagErrorReportApiClient.m; sourceTree = "<group>"; };
 		117826680A04061DEFC13F144AF20A48 /* BugsnagCollections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagCollections.h; path = Source/BugsnagCollections.h; sourceTree = "<group>"; };
@@ -382,6 +400,7 @@
 		97AFBB9BB441C5376869B32D4E7ADE75 /* BSG_KSSafeCollections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSSafeCollections.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSSafeCollections.h; sourceTree = "<group>"; };
 		981523BD65143910917EAA07F100C422 /* UIGestureRecognizer+BlocksKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+BlocksKit.h"; path = "BlocksKit/UIKit/UIGestureRecognizer+BlocksKit.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EA7ED98EF670EB83217753ADC6001CA /* QNRTPlayerKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = QNRTPlayerKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0DC37541DBD5C26D5608ADCB8E6BE6C /* BSG_KSCrashC.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSCrashC.c; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashC.c; sourceTree = "<group>"; };
 		A11DD977BDD28F2B6996DB4DBAEC9C43 /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+BlocksKit.m"; path = "BlocksKit/Core/NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
 		A1980B9B58FA0579BC6E1FC328989F02 /* BugsnagUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagUser.h; path = Source/BugsnagUser.h; sourceTree = "<group>"; };
@@ -469,7 +488,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37FFCB5007BAAD143D38312525C80241 /* Frameworks */ = {
+		2639A7E66E823E0C2DD7FD22359C0F36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -493,6 +512,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004E3EA6BAA54A1A0A569562E768FFC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C3A4AEA5CDC67CA52CDCC5D4C33BBA7 /* QNRTPlayerKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		15B99829C818EED5CE2751812B73AFDA /* Bugsnag */ = {
 			isa = PBXGroup;
 			children = (
@@ -682,6 +709,17 @@
 			path = BlocksKit;
 			sourceTree = "<group>";
 		};
+		3F39B2EA2BC665687ECAB5B58494BF98 /* QNRTPlayerKit */ = {
+			isa = PBXGroup;
+			children = (
+				004E3EA6BAA54A1A0A569562E768FFC1 /* Frameworks */,
+				AFD5B21751AD7F3915FB8C96523DA395 /* Pod */,
+				4E9AF035A8ECBF477EA3E32DB2F07FB6 /* Support Files */,
+			);
+			name = QNRTPlayerKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		466886A1B46DA10D6B2406C03B3801CF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,6 +728,15 @@
 				C8EDE116D60E26425BD3BE530808AB7C /* PLMediaStreamingKit */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4E9AF035A8ECBF477EA3E32DB2F07FB6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06D5F82296474044E154C32AF5F83697 /* QNRTPlayerKit.xcconfig */,
+			);
+			name = "Support Files";
+			path = "QNRTNiuLiving/Pods/Target Support Files/QNRTPlayerKit";
 			sourceTree = "<group>";
 		};
 		5C4214E3986AE68C50F78F2A6C1C1BA6 /* Targets Support Files */ = {
@@ -746,6 +793,14 @@
 			path = "Target Support Files/Pods-QNRTNiuLiving";
 			sourceTree = "<group>";
 		};
+		AFD5B21751AD7F3915FB8C96523DA395 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9EA7ED98EF670EB83217753ADC6001CA /* QNRTPlayerKit.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		BBE5A7258D378A8ADF66E3F6D26345E1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -780,6 +835,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E680454E590AC2DE79066705B5C84709 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				466886A1B46DA10D6B2406C03B3801CF /* Pods */,
 				2A8DBFF50AFDD1462F5430CDD322A10B /* Products */,
@@ -811,6 +867,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E680454E590AC2DE79066705B5C84709 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F39B2EA2BC665687ECAB5B58494BF98 /* QNRTPlayerKit */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		ED36F9F0AC17766A46368F255D2E7363 /* Core */ = {
@@ -863,7 +927,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		64C0FBAC30C4F8C20307E9F234B80A51 /* Headers */ = {
+		864257ECFE6FC505E13D2E259C1FB331 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -997,18 +1061,19 @@
 /* Begin PBXNativeTarget section */
 		94BA3793A3B2CD20C691ABED965322AE /* Pods-QNRTNiuLiving */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0CFED4D068463C8A5FE1C3C606BE21F1 /* Build configuration list for PBXNativeTarget "Pods-QNRTNiuLiving" */;
+			buildConfigurationList = B85D35DA34C216247D3B92AA8D3BC76B /* Build configuration list for PBXNativeTarget "Pods-QNRTNiuLiving" */;
 			buildPhases = (
-				64C0FBAC30C4F8C20307E9F234B80A51 /* Headers */,
-				3125DFCAEA6322866D826A62BC5BFF1D /* Sources */,
-				37FFCB5007BAAD143D38312525C80241 /* Frameworks */,
+				864257ECFE6FC505E13D2E259C1FB331 /* Headers */,
+				D1C9E05B0B5610D2B1304EA32A9DFCB4 /* Sources */,
+				2639A7E66E823E0C2DD7FD22359C0F36 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D595EE950A242239514308B6A32C6836 /* PBXTargetDependency */,
-				16FBCA1B4F8D71F344EC32461EE9956E /* PBXTargetDependency */,
-				22DCD18F2CDEB4F096C2B037A8FC077F /* PBXTargetDependency */,
+				77BC892972D3F92E7DEC3AD80E31B996 /* PBXTargetDependency */,
+				AB83CF4A0995A25BAC8769C2D00184FE /* PBXTargetDependency */,
+				539534C15A84639F552EC73EEC408C28 /* PBXTargetDependency */,
+				2E79316AED11353BA3F6CECED2C308CA /* PBXTargetDependency */,
 			);
 			name = "Pods-QNRTNiuLiving";
 			productName = "Pods-QNRTNiuLiving";
@@ -1074,19 +1139,12 @@
 				BDC8B0769B39E03BE257939D6FD4D966 /* Bugsnag */,
 				3CBC146F23FC3E26238A7B4DEA2FBBFF /* PLMediaStreamingKit */,
 				94BA3793A3B2CD20C691ABED965322AE /* Pods-QNRTNiuLiving */,
+				FAFF1D40A1F3F075D96CE12E7C40342E /* QNRTPlayerKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3125DFCAEA6322866D826A62BC5BFF1D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A114D14DDEE89239DA6E9596AF593988 /* Pods-QNRTNiuLiving-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		43075EC796CAE062D497E4C7336D6BC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1194,26 +1252,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D1C9E05B0B5610D2B1304EA32A9DFCB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE4C93628256B0F82177EFA89628090 /* Pods-QNRTNiuLiving-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		16FBCA1B4F8D71F344EC32461EE9956E /* PBXTargetDependency */ = {
+		2E79316AED11353BA3F6CECED2C308CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Bugsnag;
-			target = BDC8B0769B39E03BE257939D6FD4D966 /* Bugsnag */;
-			targetProxy = 3CB299B482B0995C43136B802D8DA28C /* PBXContainerItemProxy */;
+			name = QNRTPlayerKit;
+			target = FAFF1D40A1F3F075D96CE12E7C40342E /* QNRTPlayerKit */;
+			targetProxy = 3FA8803382C3004A64D58DECC7CE7E4E /* PBXContainerItemProxy */;
 		};
-		22DCD18F2CDEB4F096C2B037A8FC077F /* PBXTargetDependency */ = {
+		539534C15A84639F552EC73EEC408C28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PLMediaStreamingKit;
 			target = 3CBC146F23FC3E26238A7B4DEA2FBBFF /* PLMediaStreamingKit */;
-			targetProxy = BA0781CECA11D18C5874BFDC375956A5 /* PBXContainerItemProxy */;
+			targetProxy = ECCE42C8F5907C1121593199AC19C006 /* PBXContainerItemProxy */;
 		};
-		D595EE950A242239514308B6A32C6836 /* PBXTargetDependency */ = {
+		77BC892972D3F92E7DEC3AD80E31B996 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BlocksKit;
 			target = B2777DC549C19A310651FBD3C87B71DF /* BlocksKit */;
-			targetProxy = 864E0B24ECF7A2E3DDB4AF8DFC94D714 /* PBXContainerItemProxy */;
+			targetProxy = E1FC72A998FC1992DA18A9C1E561860A /* PBXContainerItemProxy */;
+		};
+		AB83CF4A0995A25BAC8769C2D00184FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bugsnag;
+			target = BDC8B0769B39E03BE257939D6FD4D966 /* Bugsnag */;
+			targetProxy = 17A8EA616E0BD0370F0D9D06674060DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1237,28 +1309,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		32C3666E05ABEEA72BA991E16A45753A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1225EF7EBB2989FA36DE3C1606B01B0 /* Pods-QNRTNiuLiving.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1314,27 +1364,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		5530176D11C8CE2E2093DAA71417BE67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4790B4DD07624C0141110579C7E7C95 /* Pods-QNRTNiuLiving.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1460,6 +1489,76 @@
 			};
 			name = Debug;
 		};
+		975D308044270E90CC31BFBE06705BCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D5F82296474044E154C32AF5F83697 /* QNRTPlayerKit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A80DA5B42737D1F9305BD6CB9353D2AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D5F82296474044E154C32AF5F83697 /* QNRTPlayerKit.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ABDB70A8D027CE81BC39F683C5830D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4790B4DD07624C0141110579C7E7C95 /* Pods-QNRTNiuLiving.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B26BD7F10ACEB49811E3516CCB1A5233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1225EF7EBB2989FA36DE3C1606B01B0 /* Pods-QNRTNiuLiving.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		DC32D64519D075BA11E0D9B8797B5158 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21D867ABD44851ADC3BAB508913FAD49 /* Bugsnag.xcconfig */;
@@ -1509,15 +1608,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0CFED4D068463C8A5FE1C3C606BE21F1 /* Build configuration list for PBXNativeTarget "Pods-QNRTNiuLiving" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5530176D11C8CE2E2093DAA71417BE67 /* Debug */,
-				32C3666E05ABEEA72BA991E16A45753A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		0EB7ADD2263DA698B0FC8AEF4919D2CB /* Build configuration list for PBXAggregateTarget "PLMediaStreamingKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1550,6 +1640,24 @@
 			buildConfigurations = (
 				EED22867E8F2133FCA4BB78619B85443 /* Debug */,
 				2D421A5973B48E6AA96BC0FFC2BC4D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B85D35DA34C216247D3B92AA8D3BC76B /* Build configuration list for PBXNativeTarget "Pods-QNRTNiuLiving" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABDB70A8D027CE81BC39F683C5830D7E /* Debug */,
+				B26BD7F10ACEB49811E3516CCB1A5233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D08FE4744F7A102F6FB4F91BB4C1ECDE /* Build configuration list for PBXAggregateTarget "QNRTPlayerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80DA5B42737D1F9305BD6CB9353D2AF /* Debug */,
+				975D308044270E90CC31BFBE06705BCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
