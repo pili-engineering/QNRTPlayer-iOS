@@ -131,8 +131,6 @@
 		9C1EFEFE259B1E17000C7AC3 /* volume@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFEEF259B1E16000C7AC3 /* volume@3x.png */; };
 		9C1EFEFF259B1E17000C7AC3 /* show@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFEF0259B1E16000C7AC3 /* show@2x.png */; };
 		9C1EFF00259B1E17000C7AC3 /* hide@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFEF1259B1E17000C7AC3 /* hide@3x.png */; };
-		9CF0002725B1982C0028C82F /* QNRTPlayerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF0001925B196990028C82F /* QNRTPlayerKit.framework */; };
-		9CF0002825B1982C0028C82F /* QNRTPlayerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF0001925B196990028C82F /* QNRTPlayerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F86D05A7F2A5E31A3FF4CCD0 /* libPods-QNRTNiuLiving.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A08C52E401C86F337AB19B /* libPods-QNRTNiuLiving.a */; };
 /* End PBXBuildFile section */
 
@@ -153,7 +151,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9CF0002825B1982C0028C82F /* QNRTPlayerKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +301,6 @@
 		9C1EFEF0259B1E16000C7AC3 /* show@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show@2x.png"; sourceTree = "<group>"; };
 		9C1EFEF1259B1E17000C7AC3 /* hide@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hide@3x.png"; sourceTree = "<group>"; };
 		9CA684F325A44E0B00DA5200 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		9CF0001925B196990028C82F /* QNRTPlayerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QNRTPlayerKit.framework; path = ../Pod/iphoneos/QNRTPlayerKit.framework; sourceTree = "<group>"; };
 		C0A08C52E401C86F337AB19B /* libPods-QNRTNiuLiving.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QNRTNiuLiving.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D35AB23593AD379F4FE54F /* Pods-QNRTNiuLiving.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNRTNiuLiving.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QNRTNiuLiving/Pods-QNRTNiuLiving.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -315,7 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F86D05A7F2A5E31A3FF4CCD0 /* libPods-QNRTNiuLiving.a in Frameworks */,
-				9CF0002725B1982C0028C82F /* QNRTPlayerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +336,6 @@
 		93032F9420562FC4009E5F9D = {
 			isa = PBXGroup;
 			children = (
-				9CF0001925B196990028C82F /* QNRTPlayerKit.framework */,
 				93032F9F20562FC4009E5F9D /* QNRTNiuLiving */,
 				93032FB820562FC4009E5F9D /* QNRTNiuLivingUITests */,
 				93032F9E20562FC4009E5F9D /* Products */,
@@ -773,11 +767,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-QNRTNiuLiving/Pods-QNRTNiuLiving-frameworks.sh",
 				"${PODS_ROOT}/PLMediaStreamingKit/Pod/Library/PLMediaStreamingKit.framework",
 				"${PODS_ROOT}/PLMediaStreamingKit/Pod/Library/HappyDNS.framework",
+				"${PODS_ROOT}/../../Pod/iphoneos/QNRTPlayerKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PLMediaStreamingKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HappyDNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QNRTPlayerKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -989,7 +985,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = W2TP34G2MM;
+				DEVELOPMENT_TEAM = GDFHW66V92;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1017,7 +1013,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
-				DEVELOPMENT_TEAM = W2TP34G2MM;
+				DEVELOPMENT_TEAM = GDFHW66V92;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
