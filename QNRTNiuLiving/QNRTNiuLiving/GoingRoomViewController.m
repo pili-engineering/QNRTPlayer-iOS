@@ -39,7 +39,7 @@
     self.goingRoomTextField.layer.borderWidth = 0.5f;
     self.goingRoomTextField.layer.cornerRadius = 20;
     self.goingRoomTextField.layer.masksToBounds = YES;
-    self.goingRoomTextField.text = @"webrtc://10.200.20.28:1998/sdk-live/timestamp";
+    self.goingRoomTextField.text = @"http://pili-hls.qnsdk.com/sdk-live/timestamp.m3u8";
 }
 - (IBAction)backAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
