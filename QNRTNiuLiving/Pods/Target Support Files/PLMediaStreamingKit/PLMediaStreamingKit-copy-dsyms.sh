@@ -83,4 +83,3 @@ install_bcsymbolmap() {
 }
 
 install_dsym "${PODS_ROOT}/PLMediaStreamingKit/Pod/Library/PLMediaStreamingKit.framework.dSYM"
-install_dsym "${PODS_ROOT}/PLMediaStreamingKit/Pod/Library/PLMediaStreamingKit.framework.dSYM"
