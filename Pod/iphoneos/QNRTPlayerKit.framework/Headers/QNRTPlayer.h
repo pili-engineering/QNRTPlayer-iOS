@@ -169,6 +169,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)muteVideo:(BOOL)mute;
 
+/*!
+ * @abstract 是否将声音从扬声器输出。
+ *
+ * @discussion 默认值为 NO，传入 YES 时，会强制声音从扬声器输出。
+ *
+ * @warning 由于系统原因，在某些设备（如 iPhone XS Max、iPhone 8 Plus）上，连接 AirPods 后无法通过
+ * 该接口将声音强制设为扬声器输出。如有需求，可以通过使用 AVRoutePickerView 来切换。
+ *
+ * @since v1.0.2
+ */
+- (void)setSpeakerOn:(BOOL)speakerOn;
+
 @end
 
 #pragma mark - Category (Logging)

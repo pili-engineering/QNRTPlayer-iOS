@@ -15,12 +15,12 @@ PODS:
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
   - Bugsnag (5.15.4)
-  - PLMediaStreamingKit (3.1.0):
-    - PLMediaStreamingKit/ex-HappyDNS (= 3.1.0)
-    - PLMediaStreamingKit/HappyDNS (= 3.1.0)
-  - PLMediaStreamingKit/ex-HappyDNS (3.1.0)
-  - PLMediaStreamingKit/HappyDNS (3.1.0)
-  - QNRTPlayerKit (1.0.1)
+  - PLMediaStreamingKit (3.1.1):
+    - PLMediaStreamingKit/ex-HappyDNS (= 3.1.1)
+    - PLMediaStreamingKit/HappyDNS (= 3.1.1)
+  - PLMediaStreamingKit/ex-HappyDNS (3.1.1)
+  - PLMediaStreamingKit/HappyDNS (3.1.1)
+  - QNRTPlayerKit (1.0.2)
 
 DEPENDENCIES:
   - BlocksKit (= 2.2.5)
@@ -41,9 +41,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
   Bugsnag: df1d395695ddf795aa35c23ef4eaef4a04ddcffd
-  PLMediaStreamingKit: a0bd94a5465d0afd3b55af41fca08f87c89f1a42
-  QNRTPlayerKit: 483a23b45cb358c9f2b575fbfa3fc5709e832e08
+  PLMediaStreamingKit: c9189aefaef1b8f90a53a93df1f961eddcb5c778
+  QNRTPlayerKit: a2182508f1b4e393f7e2b52437974a48b95acebd
 
 PODFILE CHECKSUM: c44235eadbcf499ee5f7178ce5d0f3280733ea9d
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.12.1
