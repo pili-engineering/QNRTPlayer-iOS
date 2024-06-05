@@ -177,7 +177,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @warning 由于系统原因，在某些设备（如 iPhone XS Max、iPhone 8 Plus）上，连接 AirPods 后无法通过
  * 该接口将声音强制设为扬声器输出。如有需求，可以通过使用 AVRoutePickerView 来切换。
  *
- * @since v1.0.0
+ * @since v1.0.2
  */
 - (void)setSpeakerOn:(BOOL)speakerOn;
 
