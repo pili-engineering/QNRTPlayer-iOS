@@ -8,15 +8,10 @@
 
 #import "PLPlayerViewController.h"
 #import <QNRTPlayerKit/QNRTPlayerKit.h>
-#import "UIAlertView+BlocksKit.h"
 
-
-@interface PLPlayerViewController ()<QNRTPlayerDelegate>
+@interface PLPlayerViewController () <QNRTPlayerDelegate>
 @property (nonatomic, strong) QNRTPlayer *player;
 @property (nonatomic, strong) NSTimer *timer;
-
-// add UI
-
 
 @end
 
@@ -39,7 +34,6 @@
 
 - (void)setupUI {
     self.infoView.hidden = YES;
-//    self.messageView.hidden = YES;
     self.messageView.alpha = 0;
     self.messageLabel.text = [NSString stringWithFormat:@"链接： %@复制到剪贴板",self.roomURL];
     self.reportButton.layer.cornerRadius = 10.0;
@@ -58,7 +52,7 @@
 }
 
 - (void)playerInfo {
-    self.resolutionLabel.text = [NSString stringWithFormat:@"分辨率： %.0f * %.0f",self.player.width,self.player.height];
+    self.resolutionLabel.text = [NSString stringWithFormat:@"分辨率： %.fx%.f", self.player.width, self.player.height];
 }
 
 - (void)setupPlayer:(NSString *)playURL {
@@ -76,21 +70,25 @@
     self.infoButton.selected = !self.infoButton.isSelected;
     if (self.infoButton.isSelected) {
         self.infoView.hidden = NO;
-    }else {
+    } else {
         self.infoView.hidden = YES;
     }
 }
+
 - (IBAction)urlCopyAction:(id)sender {
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = self.roomURL;
-    [UIView animateWithDuration:1.0 animations:^{ // 执行动画
+    [UIView animateWithDuration:1.0 animations:^{ 
+        // 执行动画
         self.messageView.alpha = 1.f;
-    } completion:^(BOOL finished) { // 完成
+    } completion:^(BOOL finished) { 
+        // 完成
         [UIView animateWithDuration:2.0 delay:1.0 options:UIViewAnimationOptionCurveLinear animations:^{
             self.messageView.alpha = 0;
         } completion:nil];
     }];
 }
+
 - (IBAction)closeAction:(id)sender {
     [self.timer invalidate];
     self.timer = nil;
@@ -113,21 +111,24 @@
         [self closeAction:nil];
     }];
 }
+
 - (IBAction)playAction:(id)sender {
     UIButton * button = (UIButton *)sender;
     if (!button.isSelected) {
         [self.player playWithUrl:[NSURL URLWithString:self.roomURL] supportHttps:NO];
         [self.bufferingIndicator startAnimating];
-    }else {
+    } else {
         [self.player stop];
     }
 }
+
 - (IBAction)muteAudioAction:(id)sender {
     UIButton *button = (UIButton *)sender;
     button.selected = !button.isSelected;
     [self.player muteAudio:button.isSelected];
     
 }
+
 - (IBAction)muteVideoAction:(id)sender {
     UIButton *button = (UIButton *)sender;
     button.selected = !button.isSelected;
@@ -137,33 +138,58 @@
 #pragma mark QNRTPlayerDelegate
 
 - (void)RTPlayer:(QNRTPlayer *)player didFailWithError:(NSError *)error {
-    NSLog(@"QNRTPlayerDelegate didFailWithError:%@",error);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"QNRTPlayerDelegate didFailWithError:%@", error);
+        [self showAlertWithMessage:[NSString stringWithFormat:@"发生错误：%ld, 信息：%@", (long)error.code, error.localizedDescription] completion:nil];
+    });
 }
 
 - (void)RTPlayer:(QNRTPlayer *)player playStateDidChange:(QNRTPlayState)playState {
-    NSLog(@"QNRTPlayerDelegate playStateDidChange:%d",(int)playState);
     dispatch_async(dispatch_get_main_queue(), ^{
+        NSString *message = @"";
+        switch (playState) {
+            case QNRTPlayStateInit:
+                message = @"初始";
+                break;
+            case QNRTPlayStateError:
+                message = @"错误";
+                break;
+            case QNRTPlayStateReady:
+                message = @"已准备";
+                break;
+            case QNRTPlayStateStoped:
+                message = @"已停止";
+                break;
+            case QNRTPlayStatePlaying:
+                message = @"播放中";
+                break;
+            default:
+                break;
+        }
+        NSLog(@"QNRTPlayerDelegate playStateDidChange:%@", message);
         if (playState == QNRTPlayStatePlaying) {
             self.playButton.selected = YES;
             [self.bufferingIndicator stopAnimating];
-        }else {
+        } else {
             self.playButton.selected = NO;
         }
-        
     });
-    
 }
 
 - (void)RTPlayer:(QNRTPlayer *)player firstSourceDidDecode:(QNRTSourceKind)kind {
-    NSLog(@"QNRTPlayerDelegate firstSourceDidDecode:%d",(int)kind);
-    if (QNRTSourceKindVideo == kind) {
-        [self.bufferingIndicator stopAnimating];
-    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"QNRTPlayerDelegate firstSourceDidDecode:%d",(int)kind);
+        if (QNRTSourceKindVideo == kind) {
+            [self.bufferingIndicator stopAnimating];
+            NSString * message = [NSString stringWithFormat:@"首帧视频：%.fx%.f", self.player.width, self.player.height];
+            [self showAlertWithMessage:message completion:nil];
+        }
+    });
 }
 
 - (void)RTPlayer:(QNRTPlayer *)player didGetStatistic:(NSDictionary *)statistic {
-    NSLog(@"QNRTPlayerDelegate didGetStatistic:%@",statistic);
     dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"QNRTPlayerDelegate didGetStatistic:%@",statistic);
         self.fpsLabel.text = [NSString stringWithFormat:@"视频帧率： %@",statistic[QNRTStatisticVideoFrameRateKey]];
         self.bitrateLabel.text = [NSString stringWithFormat:@"视频码率： %0.2f b/s",[statistic[QNRTStatisticVideoBitrateKey] floatValue]];
         self.audioBitrateLabel.text = [NSString stringWithFormat:@"音频码率： %.2f b/s",[statistic[QNRTStatisticAudioBitrateKey] floatValue]];
@@ -171,30 +197,20 @@
 }
 
 - (void)RTPlayer:(QNRTPlayer *)player trackDidReceived:(QNRTSourceKind )kind {
-    NSLog(@"QNRTPlayerDelegate trackDidReceived:%d",(int)kind);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"QNRTPlayerDelegate trackDidReceived:%d", (int)kind);
+    });
 }
 
-- (void)showAlertWithMessage:(NSString *)message completion:(void (^)(void))completion
-{
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) {
-        UIAlertView *alertView = [UIAlertView bk_showAlertViewWithTitle:@"错误" message:message cancelButtonTitle:@"确定" otherButtonTitles:nil handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
-            if (completion) {
-                completion();
-            }
-        }];
-        [alertView show];
-    }
-    else {
-        UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"错误" message:message preferredStyle:UIAlertControllerStyleAlert];
-        [controller addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            if (completion) {
-                completion();
-            }
-        }]];
-        [self presentViewController:controller animated:YES completion:nil];
-    }
+- (void)showAlertWithMessage:(NSString *)message completion:(void (^)(void))completion {
+    UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+    [controller addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        if (completion) {
+            completion();
+        }
+    }]];
+    [self presentViewController:controller animated:YES completion:nil];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -202,13 +218,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 @interface UserDelegateVC : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *backBtn;
-@property (weak, nonatomic) IBOutlet UIWebView *userDelegateDataWeb;
+@property (weak, nonatomic) IBOutlet WKWebView *userDelegateDataWeb;
 
 @end

@@ -8,7 +8,6 @@
 
 #import "CreateRoomViewController.h"
 #import "PushLiveViewController.h"
-#import "UIAlertView+BlocksKit.h"
 #import "UserDelegateVC.h"
 
 @interface CreateRoomViewController ()
@@ -44,11 +43,13 @@
     self.createRoomTextField.layer.borderWidth = 0.5f;
     self.createRoomTextField.layer.cornerRadius = 20;
     self.createRoomTextField.layer.masksToBounds = YES;
-    
+    self.createRoomTextField.text = @"rtmp://pili-publish.qnsdk.com/sdk-live/Aaron";
 }
+
 - (IBAction)backAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 - (IBAction)createRoomAction:(id)sender {
     if (!self.userClareButton.isSelected) {
         [self showAlertWithMessage:@"需同意牛直播用户协议" completion:nil];
@@ -62,9 +63,11 @@
     pushLiveVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:pushLiveVC animated:YES completion:nil];
 }
+
 - (IBAction)userClareAgreeAction:(id)sender {
     self.userClareButton.selected = !self.userClareButton.isSelected;
 }
+
 - (IBAction)userDelegateAction:(id)sender {
     UserDelegateVC *userDelegateVC = [[UserDelegateVC alloc] init];
     userDelegateVC.modalPresentationStyle = UIModalPresentationFullScreen;
@@ -72,25 +75,14 @@
     }];
 }
 
-- (void)showAlertWithMessage:(NSString *)message completion:(void (^)(void))completion
-{
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) {
-        UIAlertView *alertView = [UIAlertView bk_showAlertViewWithTitle:@"错误" message:message cancelButtonTitle:@"确定" otherButtonTitles:nil handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
-            if (completion) {
-                completion();
-            }
-        }];
-        [alertView show];
-    }
-    else {
-        UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"错误" message:message preferredStyle:UIAlertControllerStyleAlert];
-        [controller addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            if (completion) {
-                completion();
-            }
-        }]];
-        [self presentViewController:controller animated:YES completion:nil];
-    }
+- (void)showAlertWithMessage:(NSString *)message completion:(void (^)(void))completion {
+    UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+    [controller addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        if (completion) {
+            completion();
+        }
+    }]];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -103,13 +95,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

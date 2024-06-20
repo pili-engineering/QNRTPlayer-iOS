@@ -10,7 +10,6 @@
 #import "SettingViewController.h"
 #import "CreateRoomViewController.h"
 #import "GoingRoomViewController.h"
-#import "UIAlertView+BlocksKit.h"
 
 #import <PLMediaStreamingKit/PLMediaStreamingKit.h>
 
@@ -23,20 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    // hera 20200608 App Store 审核使用三方强制更新被拒
-//    if ([[[NSBundle mainBundle] bundleIdentifier] isEqualToString:BundleIdentifierInFir]) {
-//        //企业版
-//        [self requestUpgradeURLWithCompleted:^(NSError *error, NSDictionary *upgradeDic) {
-//            if ([[upgradeDic objectForKey:@"Version"] integerValue] > PLUpgrade) {
-//                [self showAlertWithMessage:@"有新版本更新" completion:^{
-//                    dispatch_async(dispatch_get_main_queue(), ^{
-//                        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:FirLink]];
-//                    });
-//                }];
-//            }
-//        }];
-//    }
-    
+
     [PLMediaStreamingSession requestCameraAccessWithCompletionHandler:^(BOOL granted) {
         if (!granted) {
             [self presentViewAlert:@"未成功获取相机采集权限，后续将无法正常推流！"];
@@ -53,6 +39,7 @@
 }
 
 #pragma mark - alert view
+
 - (void)presentViewAlert:(NSString *)message {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:nil];
@@ -65,7 +52,6 @@
 }
 
 - (void)setupUI {
-    
     CAGradientLayer *pushButtonlayer = [[CAGradientLayer alloc] init];
     pushButtonlayer.frame = self.pushButton.bounds;
     pushButtonlayer.colors =  [NSArray arrayWithObjects:
@@ -77,7 +63,6 @@
     [self.pushButton.layer insertSublayer:pushButtonlayer atIndex:0];
     self.pushButton.layer.cornerRadius = 20.0;
     pushButtonlayer.cornerRadius = 20.0;
-    
     
     CAGradientLayer *playButtonlayer = [[CAGradientLayer alloc] init];
     playButtonlayer.frame = self.playButton.bounds;
@@ -92,67 +77,16 @@
     playButtonlayer.cornerRadius = 20.0;
 }
 
-// hera 20200608 App Store 审核使用三方强制更新被拒
-//- (void)requestUpgradeURLWithCompleted:(void (^)(NSError *error, NSDictionary *upgradeDic))handler
-//{
-//    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/v1/upgrade/app?appId=com.qiniu.QiNiuLiving",PLDomain]];
-//    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:url];
-//    request.HTTPMethod = @"GET";
-//    request.timeoutInterval = 10;
-//    
-//    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//        if (error) {
-//            dispatch_async(dispatch_get_main_queue(), ^{
-//                handler(error, nil);
-//            });
-//            return;
-//        }
-//        
-//        NSDictionary *upgradeDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            handler(nil, upgradeDic);
-//        });
-//        
-//    }];
-//    [task resume];
-//}
-//
-//- (void)showAlertWithMessage:(NSString *)message completion:(void (^)(void))completion
-//{
-//    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) {
-//        UIAlertView *alertView = [UIAlertView bk_showAlertViewWithTitle:@"版本更新" message:message cancelButtonTitle:@"更新" otherButtonTitles:@[@"取消"] handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
-//            if (buttonIndex == 0) {
-//                if (completion) {
-//                    completion();
-//                }
-//            }
-//            
-//        }];
-//        [alertView show];
-//    }
-//    else {
-//        UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"版本更新" message:message preferredStyle:UIAlertControllerStyleAlert];
-//        [controller addAction:[UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-//            if (completion) {
-//                completion();
-//            }
-//        }]];
-//        [controller addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-//        }]];
-//        [self presentViewController:controller animated:YES completion:nil];
-//    }
-//}
-
 - (IBAction)pushAction:(id)sender {
     CreateRoomViewController *createRoomVC = [[CreateRoomViewController alloc] init];
-    [self.navigationController pushViewController:createRoomVC
-                                         animated:YES];
+    [self.navigationController pushViewController:createRoomVC animated:YES];
 }
+
 - (IBAction)playAction:(id)sender {
     GoingRoomViewController *goingRoomVC = [[GoingRoomViewController alloc] init];
     [self.navigationController pushViewController:goingRoomVC animated:YES];
 }
+
 - (IBAction)settingAction:(id)sender {
     SettingViewController *settingVC = [[SettingViewController alloc] init];
     [self.navigationController pushViewController:settingVC animated:YES];

@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDelegateVC">
             <connections>
                 <outlet property="backBtn" destination="qKq-Fm-i0U" id="IYS-Q1-CEh"/>
-                <outlet property="userDelegateDataWeb" destination="oNG-hB-HKH" id="ikD-gO-Bid"/>
+                <outlet property="userDelegateDataWeb" destination="8eM-1C-hZY" id="gYC-fb-JZb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -30,7 +28,7 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKq-Fm-i0U">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKq-Fm-i0U">
                             <rect key="frame" x="319" y="24" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="NyP-cr-4He"/>
@@ -59,21 +57,26 @@
                         </mask>
                     </variation>
                 </view>
-                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNG-hB-HKH">
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eM-1C-hZY">
                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                    <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </webView>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="oNG-hB-HKH" secondAttribute="trailing" id="Ayj-y0-oZl"/>
+                <constraint firstAttribute="bottom" secondItem="8eM-1C-hZY" secondAttribute="bottom" id="2AZ-OX-ify"/>
                 <constraint firstItem="ThA-ao-WWW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MJH-Oi-5j8"/>
-                <constraint firstItem="oNG-hB-HKH" firstAttribute="top" secondItem="ThA-ao-WWW" secondAttribute="bottom" id="MKb-kQ-IcF"/>
                 <constraint firstAttribute="trailing" secondItem="ThA-ao-WWW" secondAttribute="trailing" id="NLf-4T-LhM"/>
-                <constraint firstAttribute="bottom" secondItem="oNG-hB-HKH" secondAttribute="bottom" id="Pbg-kr-U8f"/>
                 <constraint firstItem="ThA-ao-WWW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VVS-AO-Fba"/>
-                <constraint firstItem="oNG-hB-HKH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wfk-U0-xMS"/>
+                <constraint firstItem="8eM-1C-hZY" firstAttribute="top" secondItem="ThA-ao-WWW" secondAttribute="bottom" id="X2X-K8-Y1L"/>
+                <constraint firstAttribute="trailing" secondItem="8eM-1C-hZY" secondAttribute="trailing" id="eac-gf-pE2"/>
+                <constraint firstItem="8eM-1C-hZY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f5Z-cZ-yid"/>
             </constraints>
+            <point key="canvasLocation" x="50" y="-99"/>
         </view>
     </objects>
 </document>

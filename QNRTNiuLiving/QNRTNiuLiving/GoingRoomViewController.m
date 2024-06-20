@@ -8,9 +8,9 @@
 
 #import "GoingRoomViewController.h"
 #import "PLPlayerViewController.h"
-#import "UIAlertView+BlocksKit.h"
+#import "ScanViewController.h"
 
-@interface GoingRoomViewController ()
+@interface GoingRoomViewController () <ScanViewControllerDelegate>
 
 @end
 
@@ -22,7 +22,7 @@
     [self setupUI];
 }
 
-- (void)setupUI {
+- (void)setupUI {    
     CAGradientLayer *pushButtonlayer = [[CAGradientLayer alloc] init];
     pushButtonlayer.frame = self.goingRoomButton.bounds;
     pushButtonlayer.colors =  [NSArray arrayWithObjects:
@@ -40,9 +40,17 @@
     self.goingRoomTextField.layer.cornerRadius = 20;
     self.goingRoomTextField.layer.masksToBounds = YES;
 }
+
 - (IBAction)backAction:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+- (IBAction)scanAction:(UIButton *)sender {
+    ScanViewController *scanVc = [[ScanViewController alloc] initWithDelegate:self];
+    scanVc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:scanVc animated:YES completion:nil];
+}
+
 - (IBAction)goingRoomAction:(id)sender {
     if ([self.goingRoomTextField.text isEqualToString:@""]) {
         [self showAlertWithMessage:@"链接不能为空！！！" completion:nil];
@@ -53,25 +61,26 @@
     [self presentViewController:playerVC animated:YES completion:nil];
 }
 
-- (void)showAlertWithMessage:(NSString *)message completion:(void (^)(void))completion
-{
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) {
-        UIAlertView *alertView = [UIAlertView bk_showAlertViewWithTitle:@"错误" message:message cancelButtonTitle:@"确定" otherButtonTitles:nil handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
-            if (completion) {
-                completion();
-            }
-        }];
-        [alertView show];
+- (void)scanButtonAction:(UIButton *)button {
+    ScanViewController *scanVc = [[ScanViewController alloc] initWithDelegate:self];
+    scanVc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:scanVc animated:YES completion:nil];
+}
+
+- (void)scanQRResult:(NSString *)qrString {
+    if (qrString.length != 0) {
+        self.goingRoomTextField.text = qrString;
     }
-    else {
-        UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"错误" message:message preferredStyle:UIAlertControllerStyleAlert];
-        [controller addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            if (completion) {
-                completion();
-            }
-        }]];
-        [self presentViewController:controller animated:YES completion:nil];
-    }
+}
+
+- (void)showAlertWithMessage:(NSString *)message completion:(void (^)(void))completion {
+    UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+    [controller addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        if (completion) {
+            completion();
+        }
+    }]];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -84,13 +93,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
