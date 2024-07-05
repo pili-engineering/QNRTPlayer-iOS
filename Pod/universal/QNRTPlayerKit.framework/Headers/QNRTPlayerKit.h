@@ -15,7 +15,6 @@ FOUNDATION_EXPORT const unsigned char QNRTPlayerKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <QNRTPlayerKit/PublicHeader.h>
 
-
 #import <QNRTPlayerKit/QNRTTypeDefines.h>
 #import <QNRTPlayerKit/QNRTPlayer.h>
 #import <QNRTPlayerKit/QNRTVideoRender.h>

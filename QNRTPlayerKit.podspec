@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/pili-engineering/QNRTPlayer-iOS"
   s.license          = 'Apache License, Version 2.0'
   s.author           = { "pili" => "pili-coresdk@qiniu.com" }
-  s.source           = { :http => "https://sdk-release.qnsdk.com/QNRTPlayerKit-iphoneos-v1.0.3.zip" }
+  s.source           = { :http => "https://sdk-release.qiniushawn.top/QNRTPlayerKit-iphoneos-v1.0.3.zip" }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 

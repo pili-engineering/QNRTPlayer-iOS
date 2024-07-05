@@ -26,6 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @abstract SDK 运行过程中发生错误会通过该方法回调。
  *
+ * @param player QNRTPlayer
+ * @param error 错误信息
+ *
  * @discussion 具体错误码的含义可以见 QNRTTypeDefines.h 文件。
  *
  * @since v1.0.0
@@ -37,7 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * @param player QNRTPlayer
  * @param playState 播放状态
- * @discussion QNRTPlayStateError 不会通过此回调，会通过 - (void)RTPlayer:(QNRTPlayer *)player didFailWithError:(NSError *)error;回调出来。
+ *
+ * @discussion 状态为 QNRTPlayStateError 时，具体错误信息会通过 - (void)RTPlayer:(QNRTPlayer *)player didFailWithError:(NSError *)error; 回调。
  *
  * @since v1.0.0
  */
@@ -45,6 +49,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract 统计信息回调。
+ *
+ * @param player QNRTPlayer
+ * @param statistic 统计信息
  *
  * @discussion 回调的时间间隔由 statisticInterval 参数决定，statisticInterval 默认为 0，即不回调统计信息。
  *
@@ -55,7 +62,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)RTPlayer:(QNRTPlayer *)player didGetStatistic:(NSDictionary *)statistic;
 
 /*!
- * @abstract 当前流媒体流收到音频轨道。
+ * @abstract 当前流媒体流收到数据轨道的回调。
+ *
+ * @param player QNRTPlayer
+ * @param kind 数据源类型
  *
  * @since v1.0.0
  */
@@ -63,6 +73,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract 音视频首帧解码后的回调。
+ *
+ * @param player QNRTPlayer
+ * @param kind 数据源类型
  *
  * @since v1.0.0
  */
@@ -109,14 +122,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) double volume;
 
-/**
+/*!
  * 视频的宽
  *
  * @since v1.0.0
  */
 @property (nonatomic, assign, readonly) CGFloat width;
 
-/**
+/*!
  * 视频的高
  *
  * @since v1.0.0
@@ -139,31 +152,36 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) QNRTVideoView *playView;
 
-/**
+/*!
  * 开始播放新的 url
  *
- * @param url 需要播放的 url ，目前支持 webrtc (url 以 webrtc:// 开头) 协议。
+ * @param url 需要播放的 url ，目前支持 webrtc (url 以 webrtc:// 开头) 、WHEP 协议。
  * @param isSupport 当前播放 URL 是否支持 SSL 证书，默认为 NO
  *
  * @since v1.0.0
  */
 - (void)playWithUrl:(NSURL *)url supportHttps:(BOOL)isSupport;
 
-/**
+/*!
  * 停止播放器
  *
  * @since v1.0.0
  */
 - (void)stop;
 
-/**
- * 静音
+/*!
+ * 音频是否静音
+ *
+ * @param mute 静音开关。
  *
  * @since 1.0.0
  */
 - (void)muteAudio:(BOOL)mute;
-/**
- * 停止画面渲染
+
+/*!
+ * 视频是否停止画面渲染
+ *
+ * @param mute 渲染开关。
  *
  * @since 1.0.0
  */
@@ -171,6 +189,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  * @abstract 是否将声音从扬声器输出。
+ *
+ * @param speakerOn 扬声器开关。
  *
  * @discussion 默认值为 NO，传入 YES 时，会强制声音从扬声器输出。
  *
