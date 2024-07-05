@@ -15,8 +15,7 @@ extern NSString *QNRTErrorDomain;
 
 #pragma mark - RTPlayer Error Code
 
-NS_ERROR_ENUM(QNRTErrorDomain)
-{
+NS_ERROR_ENUM(QNRTErrorDomain) {
     // 服务请求超时，或者域名解析错误等
     QNRTErrorNetworkError                            = 20001,
     // 请求服务鉴权失败
@@ -29,10 +28,12 @@ NS_ERROR_ENUM(QNRTErrorDomain)
     QNRTErrorDescriptionError                        = 20005,
     // 连接异常
     QNRTErrorConnectFailed                           = 20006,
-    
 };
 
-///音频播放状态
+/*!
+ @typedef    QNRTPlayState
+ @abstract   定义播放的状态。
+ */
 typedef NS_ENUM(NSUInteger, QNRTPlayState) {
     /*!
      * @abstract 未知状态，只会作为 init 前的初始状态，开始播放之后任何情况下都不会再回到此状态。
@@ -81,7 +82,10 @@ typedef NS_ENUM(NSUInteger, QNRTSourceKind) {
     QNRTSourceKindVideo = 1,
 };
 
-//视频填充模式
+/*!
+ @typedef    QNRTVideoFillModeType
+ @abstract   定义视频填充模式。
+ */
 typedef enum {
     /**
      @brief Stretch to fill the full view, which may distort the image outside of its normal aspect ratio
@@ -99,10 +103,8 @@ typedef enum {
     QNRTVideoFillModePreserveAspectRatioAndFill
 } QNRTVideoFillModeType;
 
-
 extern NSString *QNRTStatisticAudioBitrateKey;
 extern NSString *QNRTStatisticVideoBitrateKey;
 extern NSString *QNRTStatisticVideoFrameRateKey;
-
 
 #endif /* QNRTTypeDefines_h */

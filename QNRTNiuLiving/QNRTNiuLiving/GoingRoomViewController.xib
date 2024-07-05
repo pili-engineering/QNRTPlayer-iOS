@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -12,6 +12,7 @@
                 <outlet property="backButton" destination="hrv-8s-PlB" id="lZd-a4-aEI"/>
                 <outlet property="goingRoomButton" destination="nWh-XU-E0x" id="go6-SZ-Hit"/>
                 <outlet property="goingRoomTextField" destination="L35-pY-T0u" id="t0k-D4-erD"/>
+                <outlet property="scanButton" destination="NV6-kG-5f0" id="aLG-a8-WGu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -31,7 +32,7 @@
                         <action selector="backAction:" destination="-1" eventType="touchUpInside" id="FzF-wy-uQa"/>
                     </connections>
                 </button>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="播放地址" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L35-pY-T0u">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="webrtc 播放地址" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L35-pY-T0u">
                     <rect key="frame" x="37.5" y="110" width="300" height="43"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="43" id="Tt5-r6-u0r"/>
@@ -50,10 +51,22 @@
                         <action selector="goingRoomAction:" destination="-1" eventType="touchUpInside" id="GEB-yx-cb8"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV6-kG-5f0">
+                    <rect key="frame" x="322" y="40" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Bo2-vh-2c5"/>
+                        <constraint firstAttribute="width" constant="30" id="Cse-sv-hBU"/>
+                    </constraints>
+                    <state key="normal" image="ic_scan.png"/>
+                    <connections>
+                        <action selector="scanAction:" destination="-1" eventType="touchUpInside" id="uCV-vm-6fG"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="L35-pY-T0u" firstAttribute="top" secondItem="hrv-8s-PlB" secondAttribute="bottom" constant="40" id="1fu-P1-nbA"/>
+                <constraint firstItem="NV6-kG-5f0" firstAttribute="centerY" secondItem="hrv-8s-PlB" secondAttribute="centerY" id="MSq-ig-oMy"/>
                 <constraint firstItem="nWh-XU-E0x" firstAttribute="width" secondItem="L35-pY-T0u" secondAttribute="width" id="RBt-cd-khB"/>
                 <constraint firstItem="L35-pY-T0u" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Th3-PF-YKk"/>
                 <constraint firstItem="hrv-8s-PlB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="V9j-Zz-CBJ"/>
@@ -61,11 +74,13 @@
                 <constraint firstItem="hrv-8s-PlB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="a4N-9J-yA1"/>
                 <constraint firstItem="nWh-XU-E0x" firstAttribute="height" secondItem="L35-pY-T0u" secondAttribute="height" id="jMj-iW-FMz"/>
                 <constraint firstItem="nWh-XU-E0x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k5n-EY-cPG"/>
+                <constraint firstAttribute="trailing" secondItem="NV6-kG-5f0" secondAttribute="trailing" constant="23" id="qub-3j-Lv7"/>
             </constraints>
             <point key="canvasLocation" x="-174" y="109"/>
         </view>
     </objects>
     <resources>
         <image name="back.png" width="24" height="24"/>
+        <image name="ic_scan.png" width="32" height="32"/>
     </resources>
 </document>

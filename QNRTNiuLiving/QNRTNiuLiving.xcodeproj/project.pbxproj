@@ -131,6 +131,9 @@
 		9C1EFEFE259B1E17000C7AC3 /* volume@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFEEF259B1E16000C7AC3 /* volume@3x.png */; };
 		9C1EFEFF259B1E17000C7AC3 /* show@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFEF0259B1E16000C7AC3 /* show@2x.png */; };
 		9C1EFF00259B1E17000C7AC3 /* hide@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1EFEF1259B1E17000C7AC3 /* hide@3x.png */; };
+		AA23814C2C23D458009A5E0A /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA23814A2C23D458009A5E0A /* ScanViewController.m */; };
+		AA23814D2C23D458009A5E0A /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA23814B2C23D458009A5E0A /* ScanViewController.xib */; };
+		AA23814F2C23D658009A5E0A /* ic_scan.png in Resources */ = {isa = PBXBuildFile; fileRef = AA23814E2C23D658009A5E0A /* ic_scan.png */; };
 		F86D05A7F2A5E31A3FF4CCD0 /* libPods-QNRTNiuLiving.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A08C52E401C86F337AB19B /* libPods-QNRTNiuLiving.a */; };
 /* End PBXBuildFile section */
 
@@ -301,6 +304,10 @@
 		9C1EFEF0259B1E16000C7AC3 /* show@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show@2x.png"; sourceTree = "<group>"; };
 		9C1EFEF1259B1E17000C7AC3 /* hide@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hide@3x.png"; sourceTree = "<group>"; };
 		9CA684F325A44E0B00DA5200 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		AA2381492C23D458009A5E0A /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		AA23814A2C23D458009A5E0A /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		AA23814B2C23D458009A5E0A /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		AA23814E2C23D658009A5E0A /* ic_scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_scan.png; sourceTree = "<group>"; };
 		C0A08C52E401C86F337AB19B /* libPods-QNRTNiuLiving.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QNRTNiuLiving.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D35AB23593AD379F4FE54F /* Pods-QNRTNiuLiving.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QNRTNiuLiving.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QNRTNiuLiving/Pods-QNRTNiuLiving.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -367,6 +374,9 @@
 				93033043205672C4009E5F9D /* GoingRoomViewController.h */,
 				93033044205672C4009E5F9D /* GoingRoomViewController.m */,
 				93033045205672C4009E5F9D /* GoingRoomViewController.xib */,
+				AA2381492C23D458009A5E0A /* ScanViewController.h */,
+				AA23814A2C23D458009A5E0A /* ScanViewController.m */,
+				AA23814B2C23D458009A5E0A /* ScanViewController.xib */,
 				934CC597205A4D7A008E3EE4 /* PLPlayerViewController.h */,
 				934CC598205A4D7A008E3EE4 /* PLPlayerViewController.m */,
 				934CC599205A4D7A008E3EE4 /* PLPlayerViewController.xib */,
@@ -407,6 +417,7 @@
 		931FAF15205F5C9000A6159D /* images */ = {
 			isa = PBXGroup;
 			children = (
+				AA23814E2C23D658009A5E0A /* ic_scan.png */,
 				9C1EFEE8259B1E12000C7AC3 /* hide.png */,
 				9C1EFEE4259B1E10000C7AC3 /* hide@2x.png */,
 				9C1EFEF1259B1E17000C7AC3 /* hide@3x.png */,
@@ -656,6 +667,7 @@
 				9C1EFEF2259B1E17000C7AC3 /* volume-high@3x.png in Resources */,
 				931FAF58205F5C9000A6159D /*  mirror-a@2x.png in Resources */,
 				931FAF64205F5C9000A6159D /* copy@3x.png in Resources */,
+				AA23814D2C23D458009A5E0A /* ScanViewController.xib in Resources */,
 				931FAF65205F5C9000A6159D /* face_beauty.png in Resources */,
 				931FAF97205F5C9000A6159D /* 音乐@3x.png in Resources */,
 				931FAF8C205F5C9000A6159D /* special@2x.png in Resources */,
@@ -690,6 +702,7 @@
 				931FAF73205F5C9000A6159D /* Group 34@2x.png in Resources */,
 				931FAF62205F5C9000A6159D /* copy.png in Resources */,
 				931FAF8E205F5C9000A6159D /* switch_camera.png in Resources */,
+				AA23814F2C23D658009A5E0A /* ic_scan.png in Resources */,
 				931FAF6A205F5C9000A6159D /* filter@3x.png in Resources */,
 				931FAF8D205F5C9000A6159D /* special@3x.png in Resources */,
 				9379291D2062598600F1405A /* iTunesArtwork@2x.png in Resources */,
@@ -827,6 +840,7 @@
 				9303304B20567511009E5F9D /* SettingViewController.m in Sources */,
 				934CC59A205A4D7A008E3EE4 /* PLPlayerViewController.m in Sources */,
 				937928D3205F9B8A00F1405A /* UIScrollView+UITouchEvent.m in Sources */,
+				AA23814C2C23D458009A5E0A /* ScanViewController.m in Sources */,
 				9303304120566FD8009E5F9D /* CreateRoomViewController.m in Sources */,
 				93032FA220562FC4009E5F9D /* AppDelegate.m in Sources */,
 				93032FEE20566543009E5F9D /* HomeViewController.m in Sources */,
@@ -994,9 +1008,9 @@
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/QNRTNiuLiving/PrefixHeader.pch";
 				INFOPLIST_FILE = QNRTNiuLiving/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QiNiuRTPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1022,9 +1036,9 @@
 				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/QNRTNiuLiving/PrefixHeader.pch";
 				INFOPLIST_FILE = QNRTNiuLiving/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.qiniu.QiNiuRTPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

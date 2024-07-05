@@ -21,8 +21,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Bugsnag startBugsnagWithApiKey:@"f8173cc59cf479b26f2a1fe6661058ee"];
     
+    NSString* uuid = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    [PLStreamingEnv initEnvWithUserUID:uuid];
+    
     // Override point for customization after application launch.
-    [PLStreamingEnv initEnv];
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -32,6 +34,7 @@
     self.window.rootViewController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth |
     UIViewAutoresizingFlexibleHeight;
     [self.window makeKeyAndVisible];
+    
     [QNRTPlayer enableFileLogging];
     
     return YES;

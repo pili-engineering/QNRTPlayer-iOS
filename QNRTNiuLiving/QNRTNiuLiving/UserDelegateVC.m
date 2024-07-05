@@ -23,9 +23,9 @@
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     [self.userDelegateDataWeb loadRequest:urlRequest];
 }
+
 - (IBAction)backAction:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:^{
-    }];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

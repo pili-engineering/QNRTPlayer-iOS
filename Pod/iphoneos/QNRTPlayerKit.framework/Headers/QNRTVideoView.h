@@ -15,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 /*!
  * @abstract 远端画面的填充方式
  *
- * @discussion 当画面与 QNRTVideoView 的比例不一致时，使用的填充方式。默认使用 QNRTVideoFillModePreserveAspectRatioAndFill。
+ * @discussion 当画面与 QNRTVideoView 的比例不一致时，使用的填充方式。
+ *             默认使用 QNRTVideoFillModePreserveAspectRatioAndFill。
  *
  * @since v1.0.0
  */
