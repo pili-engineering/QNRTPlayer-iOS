@@ -273,7 +273,7 @@
 - (void)mediaStreamingSession:(PLMediaStreamingSession *)session streamStateDidChange:(PLStreamState)state {
     NSLog(@"state: %d", state);
     [self showAlertWithMessage:[NSString stringWithFormat:@"推流状态变化: %ld", state] completion:^{
-        [self closeAction:nil];
+        
     }];
 }
 

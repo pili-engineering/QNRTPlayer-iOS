@@ -24,6 +24,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *muteAudioButton;
 @property (weak, nonatomic) IBOutlet UIButton *muteVideoButton;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *bufferingIndicator;
+@property (weak, nonatomic) IBOutlet UIButton *ScreenshotButton;
+@property (weak, nonatomic) IBOutlet UIButton *jitterBufferButton;
 
 @property (nonatomic, strong) NSString *roomURL;
 

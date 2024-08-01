@@ -9,8 +9,9 @@
 #import "CreateRoomViewController.h"
 #import "PushLiveViewController.h"
 #import "UserDelegateVC.h"
+#import "ScanViewController.h"
 
-@interface CreateRoomViewController ()
+@interface CreateRoomViewController () <ScanViewControllerDelegate>
 
 @end
 
@@ -50,6 +51,12 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)scanAction:(id)sender {
+    ScanViewController *scanVc = [[ScanViewController alloc] initWithDelegate:self];
+    scanVc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:scanVc animated:YES completion:nil];
+}
+
 - (IBAction)createRoomAction:(id)sender {
     if (!self.userClareButton.isSelected) {
         [self showAlertWithMessage:@"需同意牛直播用户协议" completion:nil];
@@ -62,6 +69,12 @@
     PushLiveViewController *pushLiveVC = [[PushLiveViewController alloc] initWithRoomName:self.createRoomTextField.text];
     pushLiveVC.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:pushLiveVC animated:YES completion:nil];
+}
+
+- (void)scanQRResult:(NSString *)qrString {
+    if (qrString.length != 0) {
+        self.createRoomTextField.text = qrString;
+    }
 }
 
 - (IBAction)userClareAgreeAction:(id)sender {

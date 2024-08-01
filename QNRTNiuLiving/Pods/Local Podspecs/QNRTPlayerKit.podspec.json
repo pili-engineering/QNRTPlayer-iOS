@@ -1,6 +1,6 @@
 {
   "name": "QNRTPlayerKit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "summary": "Pili iOS quic video player SDK, HLS video streaming supported.",
   "homepage": "https://github.com/pili-engineering/QNRTPlayer-iOS",
   "license": "Apache License, Version 2.0",
@@ -8,7 +8,7 @@
     "pili": "pili-coresdk@qiniu.com"
   },
   "source": {
-    "http": "https://sdk-release.qiniushawn.top/QNRTPlayerKit-iphoneos-v1.0.3.zip"
+    "http": "https://sdk-release.qnsdk.com/QNRTPlayerKit-iphoneos-v1.0.4.zip"
   },
   "pod_target_xcconfig": {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
