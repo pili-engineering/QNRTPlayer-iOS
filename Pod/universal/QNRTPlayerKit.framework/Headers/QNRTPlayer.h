@@ -201,6 +201,32 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setSpeakerOn:(BOOL)speakerOn;
 
+/*!
+ * @abstract 截图播放画面。
+ *
+ * @param resultCallback 截图的结果回调。
+ *
+ * @discussion 成功则回调图片，失败则回调错误。
+ *
+ * @warning 成功拉到首帧之后才可正常截图。
+ *
+ * @since v1.0.4
+ */
+- (void)takeScreenshotCallback:(QNScreenshotResultCallback)resultCallback;
+
+/*!
+ * @abstract 设置抖动缓冲区的最小延迟。
+ *
+ * @param jitterBufferMinDelay 抖动缓冲区最小延迟。
+ *
+ * @discussion 默认为 0，不开启抖动延迟，时间单位为秒，范围 [0, 1]。
+ *
+ * @warning 根据实际网络条件和对延迟的敏感度来平衡设置
+ *
+ * @since v1.0.4
+ */
+- (void)setJitterBufferMinDelay:(double)jitterBufferMinDelay;
+
 @end
 
 #pragma mark - Category (Logging)

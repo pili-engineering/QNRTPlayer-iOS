@@ -12,7 +12,8 @@
 @interface PLPlayerViewController () <QNRTPlayerDelegate>
 @property (nonatomic, strong) QNRTPlayer *player;
 @property (nonatomic, strong) NSTimer *timer;
-
+@property (nonatomic, strong) UISegmentedControl *segmentedControl;
+@property (nonatomic, strong) NSArray *valueArray;
 @end
 
 @implementation PLPlayerViewController
@@ -49,6 +50,21 @@
     [self.muteVideoButton setBackgroundImage:[UIImage imageNamed:@"hide.png"] forState:UIControlStateNormal];
     [self.muteVideoButton setBackgroundImage:[UIImage imageNamed:@"show.png"] forState:UIControlStateSelected];
     self.muteVideoButton.selected = NO;
+    
+    self.valueArray = @[@"0", @"0.1", @"0.15", @"0.2", @"0.4", @"0.6", @"1.0"];
+    self.segmentedControl = [[UISegmentedControl alloc] initWithItems:_valueArray];
+    self.segmentedControl.backgroundColor = [UIColor whiteColor];
+    self.segmentedControl.frame = CGRectMake(0, 0, 320, 50);
+    self.segmentedControl.center = self.view.center;
+    self.segmentedControl.selectedSegmentIndex = 0;
+    [self.segmentedControl addTarget:self action:@selector(jitterBufferMinDelaySelected:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:_segmentedControl];
+    _segmentedControl.hidden = YES;
+}
+
+- (void)jitterBufferMinDelaySelected:(UISegmentedControl *)segmentedControl {
+    double jitterBuffer = [self.valueArray[segmentedControl.selectedSegmentIndex] doubleValue];
+    [self.player setJitterBufferMinDelay:jitterBuffer];
 }
 
 - (void)playerInfo {
@@ -87,6 +103,38 @@
             self.messageView.alpha = 0;
         } completion:nil];
     }];
+}
+
+- (IBAction)takeShotAction:(id)sender {
+    [self.player takeScreenshotCallback:^(UIImage *ShotImage, NSError *error) {
+        if (ShotImage) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self showAlertWithMessage:@"截图自己成功" completion:nil];
+            });
+            UIImageWriteToSavedPhotosAlbum(ShotImage, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+        } else {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self showAlertWithMessage:[NSString stringWithFormat:@"截图自己失败 %ld %@", (long)error.code, error.localizedDescription] completion:nil];
+            });
+        }
+    }];
+}
+
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    if (error) {
+        NSLog(@"保存图片到相册失败: %@", error.localizedDescription);
+    } else {
+        NSLog(@"保存图片到相册成功");
+    }
+}
+
+- (IBAction)jitterBufferAction:(id)sender {
+    self.jitterBufferButton.selected = !self.jitterBufferButton.isSelected;
+    if (self.jitterBufferButton.isSelected) {
+        self.segmentedControl.hidden = NO;
+    } else {
+        self.segmentedControl.hidden = YES;
+    }
 }
 
 - (IBAction)closeAction:(id)sender {

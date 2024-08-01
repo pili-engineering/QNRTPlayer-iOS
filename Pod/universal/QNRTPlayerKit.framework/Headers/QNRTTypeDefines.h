@@ -28,6 +28,8 @@ NS_ERROR_ENUM(QNRTErrorDomain) {
     QNRTErrorDescriptionError                        = 20005,
     // 连接异常
     QNRTErrorConnectFailed                           = 20006,
+    // 操作不被允许
+    QNRTErrorOperationNotAllowed                     = 20007,
 };
 
 /*!
@@ -102,6 +104,13 @@ typedef enum {
      */
     QNRTVideoFillModePreserveAspectRatioAndFill
 } QNRTVideoFillModeType;
+
+/*!
+ * @typedef QNScreenshotResultCallback
+ *
+ * @abstract 截图的回调
+ */
+typedef void (^QNScreenshotResultCallback)(UIImage *ShotImage, NSError *error);
 
 extern NSString *QNRTStatisticAudioBitrateKey;
 extern NSString *QNRTStatisticVideoBitrateKey;

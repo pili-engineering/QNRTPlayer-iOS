@@ -61,12 +61,6 @@
     [self presentViewController:playerVC animated:YES completion:nil];
 }
 
-- (void)scanButtonAction:(UIButton *)button {
-    ScanViewController *scanVc = [[ScanViewController alloc] initWithDelegate:self];
-    scanVc.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self presentViewController:scanVc animated:YES completion:nil];
-}
-
 - (void)scanQRResult:(NSString *)qrString {
     if (qrString.length != 0) {
         self.goingRoomTextField.text = qrString;
