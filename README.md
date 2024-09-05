@@ -14,7 +14,7 @@
 
 ## 系统要求
 
-- iOS Target : >= iOS 9
+- iOS Target : >= iOS 12
 - iOS Device : >= iPhone 5s
 
 ## 安装方法

@@ -1,9 +1,9 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/fengwenxiu/Library/Developer/Xcode/DerivedData/QNRTPlayerKit-dqmndodmjdfssdfgzbgexyzwnplk/Build/Products/Release-iphoneos/QNRTPlayerKit.framework/QNRTPlayerKit'
+binary-path:     '/Users/fengwenxiu/Library/Developer/Xcode/DerivedData/QNRTNiuLiving-demztckoymopvgexsratatyjemya/Build/Products/Release-iphoneos/QNRTPlayerKit.framework/QNRTPlayerKit'
 relocations:
-  - { offsetInCU: 0x34, offset: 0x6D550, size: 0x8, addend: 0x0, symName: _QNRTPlayerKitVersionString, symObjAddr: 0x0, symBinAddr: 0x4FF740, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0x6D585, size: 0x8, addend: 0x0, symName: _QNRTPlayerKitVersionNumber, symObjAddr: 0x38, symBinAddr: 0x4FF778, symSize: 0x0 }
+  - { offsetInCU: 0x34, offset: 0x6D550, size: 0x8, addend: 0x0, symName: _QNRTPlayerKitVersionString, symObjAddr: 0x0, symBinAddr: 0x501F80, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x6D585, size: 0x8, addend: 0x0, symName: _QNRTPlayerKitVersionNumber, symObjAddr: 0x38, symBinAddr: 0x501FB8, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0x6D5C2, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender description]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x180 }
   - { offsetInCU: 0x26B, offset: 0x6D806, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender description]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x180 }
   - { offsetInCU: 0x2B2, offset: 0x6D84D, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender renderFrame:]', symObjAddr: 0x180, symBinAddr: 0x4180, symSize: 0x378 }
@@ -17,14 +17,14 @@ relocations:
   - { offsetInCU: 0x678, offset: 0x6DC13, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender setVideoTrack:]', symObjAddr: 0x588, symBinAddr: 0x4588, symSize: 0xC }
   - { offsetInCU: 0x6B9, offset: 0x6DC54, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender .cxx_destruct]', symObjAddr: 0x594, symBinAddr: 0x4594, symSize: 0x44 }
   - { offsetInCU: 0x27, offset: 0x6DD5E, size: 0x8, addend: 0x0, symName: '+[QNRTBase enableFileLogging]', symObjAddr: 0x0, symBinAddr: 0x45D8, symSize: 0x2E0 }
-  - { offsetInCU: 0x41, offset: 0x6DD78, size: 0x8, addend: 0x0, symName: _playerFileLogger, symObjAddr: 0x2EB0, symBinAddr: 0x626110, symSize: 0x0 }
+  - { offsetInCU: 0x41, offset: 0x6DD78, size: 0x8, addend: 0x0, symName: _playerFileLogger, symObjAddr: 0x2EC0, symBinAddr: 0x62A310, symSize: 0x0 }
   - { offsetInCU: 0x136, offset: 0x6DE6D, size: 0x8, addend: 0x0, symName: '+[QNRTBase enableFileLogging]', symObjAddr: 0x0, symBinAddr: 0x45D8, symSize: 0x2E0 }
   - { offsetInCU: 0x34D, offset: 0x6E084, size: 0x8, addend: 0x0, symName: '___29+[QNRTBase enableFileLogging]_block_invoke', symObjAddr: 0x2E0, symBinAddr: 0x48B8, symSize: 0x2C4 }
   - { offsetInCU: 0x41A, offset: 0x6E151, size: 0x8, addend: 0x0, symName: '+[QNRTBase versionInfo]', symObjAddr: 0x5A4, symBinAddr: 0x4B7C, symSize: 0xB4 }
-  - { offsetInCU: 0x35, offset: 0x6E299, size: 0x8, addend: 0x0, symName: _QNRTErrorDomain, symObjAddr: 0xF8, symBinAddr: 0x6234A8, symSize: 0x0 }
-  - { offsetInCU: 0x55, offset: 0x6E2B9, size: 0x8, addend: 0x0, symName: _QNRTStatisticAudioBitrateKey, symObjAddr: 0x100, symBinAddr: 0x6234B0, symSize: 0x0 }
-  - { offsetInCU: 0x6B, offset: 0x6E2CF, size: 0x8, addend: 0x0, symName: _QNRTStatisticVideoBitrateKey, symObjAddr: 0x108, symBinAddr: 0x6234B8, symSize: 0x0 }
-  - { offsetInCU: 0x81, offset: 0x6E2E5, size: 0x8, addend: 0x0, symName: _QNRTStatisticVideoFrameRateKey, symObjAddr: 0x110, symBinAddr: 0x6234C0, symSize: 0x0 }
+  - { offsetInCU: 0x35, offset: 0x6E299, size: 0x8, addend: 0x0, symName: _QNRTErrorDomain, symObjAddr: 0xF8, symBinAddr: 0x6276A8, symSize: 0x0 }
+  - { offsetInCU: 0x55, offset: 0x6E2B9, size: 0x8, addend: 0x0, symName: _QNRTStatisticAudioBitrateKey, symObjAddr: 0x100, symBinAddr: 0x6276B0, symSize: 0x0 }
+  - { offsetInCU: 0x6B, offset: 0x6E2CF, size: 0x8, addend: 0x0, symName: _QNRTStatisticVideoBitrateKey, symObjAddr: 0x108, symBinAddr: 0x6276B8, symSize: 0x0 }
+  - { offsetInCU: 0x81, offset: 0x6E2E5, size: 0x8, addend: 0x0, symName: _QNRTStatisticVideoFrameRateKey, symObjAddr: 0x110, symBinAddr: 0x6276C0, symSize: 0x0 }
   - { offsetInCU: 0x27, offset: 0x6E324, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x4C30, symSize: 0x88 }
   - { offsetInCU: 0x1D0, offset: 0x6E4CD, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x4C30, symSize: 0x88 }
   - { offsetInCU: 0x213, offset: 0x6E510, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView initWithCoder:]', symObjAddr: 0x88, symBinAddr: 0x4CB8, symSize: 0xA0 }

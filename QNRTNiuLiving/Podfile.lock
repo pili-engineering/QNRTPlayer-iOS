@@ -20,7 +20,7 @@ PODS:
     - PLMediaStreamingKit/HappyDNS (= 3.1.1)
   - PLMediaStreamingKit/ex-HappyDNS (3.1.1)
   - PLMediaStreamingKit/HappyDNS (3.1.1)
-  - QNRTPlayerKit (1.0.4)
+  - QNRTPlayerKit (1.0.5)
 
 DEPENDENCIES:
   - BlocksKit (= 2.2.5)
@@ -42,7 +42,7 @@ SPEC CHECKSUMS:
   BlocksKit: 8639b2848dd51c35c957af4d9fbdc7a769a1fc12
   Bugsnag: df1d395695ddf795aa35c23ef4eaef4a04ddcffd
   PLMediaStreamingKit: c9189aefaef1b8f90a53a93df1f961eddcb5c778
-  QNRTPlayerKit: 903d2b4920d55513416c897b8fa54806c9e6eecc
+  QNRTPlayerKit: 1d01a4996985520edc3a0f5990f7d158a181690a
 
 PODFILE CHECKSUM: c44235eadbcf499ee5f7178ce5d0f3280733ea9d
 
