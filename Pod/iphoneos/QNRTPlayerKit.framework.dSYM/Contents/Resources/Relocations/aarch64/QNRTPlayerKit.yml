@@ -1,194 +1,249 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/fengwenxiu/Library/Developer/Xcode/DerivedData/QNRTNiuLiving-demztckoymopvgexsratatyjemya/Build/Products/Release-iphoneos/QNRTPlayerKit.framework/QNRTPlayerKit'
+binary-path:     '/Users/tony/Library/Developer/Xcode/DerivedData/QNRTNiuLiving-erkkvgzictkkjvajmdybocwneiqh/Build/Products/Release-iphoneos/QNRTPlayerKit.framework/QNRTPlayerKit'
 relocations:
-  - { offsetInCU: 0x34, offset: 0x6D550, size: 0x8, addend: 0x0, symName: _QNRTPlayerKitVersionString, symObjAddr: 0x0, symBinAddr: 0x501F80, symSize: 0x0 }
-  - { offsetInCU: 0x69, offset: 0x6D585, size: 0x8, addend: 0x0, symName: _QNRTPlayerKitVersionNumber, symObjAddr: 0x38, symBinAddr: 0x501FB8, symSize: 0x0 }
-  - { offsetInCU: 0x27, offset: 0x6D5C2, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender description]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x180 }
-  - { offsetInCU: 0x26B, offset: 0x6D806, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender description]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x180 }
-  - { offsetInCU: 0x2B2, offset: 0x6D84D, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender renderFrame:]', symObjAddr: 0x180, symBinAddr: 0x4180, symSize: 0x378 }
-  - { offsetInCU: 0x4DB, offset: 0x6DA76, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender setSize:]', symObjAddr: 0x4F8, symBinAddr: 0x44F8, symSize: 0x48 }
-  - { offsetInCU: 0x51A, offset: 0x6DAB5, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender sessionId]', symObjAddr: 0x540, symBinAddr: 0x4540, symSize: 0x8 }
-  - { offsetInCU: 0x551, offset: 0x6DAEC, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender renderView]', symObjAddr: 0x548, symBinAddr: 0x4548, symSize: 0x8 }
-  - { offsetInCU: 0x588, offset: 0x6DB23, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender setRenderView:]', symObjAddr: 0x550, symBinAddr: 0x4550, symSize: 0xC }
-  - { offsetInCU: 0x5C9, offset: 0x6DB64, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender delegate]', symObjAddr: 0x55C, symBinAddr: 0x455C, symSize: 0x18 }
-  - { offsetInCU: 0x600, offset: 0x6DB9B, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender setDelegate:]', symObjAddr: 0x574, symBinAddr: 0x4574, symSize: 0xC }
-  - { offsetInCU: 0x641, offset: 0x6DBDC, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender videoTrack]', symObjAddr: 0x580, symBinAddr: 0x4580, symSize: 0x8 }
-  - { offsetInCU: 0x678, offset: 0x6DC13, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender setVideoTrack:]', symObjAddr: 0x588, symBinAddr: 0x4588, symSize: 0xC }
-  - { offsetInCU: 0x6B9, offset: 0x6DC54, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender .cxx_destruct]', symObjAddr: 0x594, symBinAddr: 0x4594, symSize: 0x44 }
-  - { offsetInCU: 0x27, offset: 0x6DD5E, size: 0x8, addend: 0x0, symName: '+[QNRTBase enableFileLogging]', symObjAddr: 0x0, symBinAddr: 0x45D8, symSize: 0x2E0 }
-  - { offsetInCU: 0x41, offset: 0x6DD78, size: 0x8, addend: 0x0, symName: _playerFileLogger, symObjAddr: 0x2EC0, symBinAddr: 0x62A310, symSize: 0x0 }
-  - { offsetInCU: 0x136, offset: 0x6DE6D, size: 0x8, addend: 0x0, symName: '+[QNRTBase enableFileLogging]', symObjAddr: 0x0, symBinAddr: 0x45D8, symSize: 0x2E0 }
-  - { offsetInCU: 0x34D, offset: 0x6E084, size: 0x8, addend: 0x0, symName: '___29+[QNRTBase enableFileLogging]_block_invoke', symObjAddr: 0x2E0, symBinAddr: 0x48B8, symSize: 0x2C4 }
-  - { offsetInCU: 0x41A, offset: 0x6E151, size: 0x8, addend: 0x0, symName: '+[QNRTBase versionInfo]', symObjAddr: 0x5A4, symBinAddr: 0x4B7C, symSize: 0xB4 }
-  - { offsetInCU: 0x35, offset: 0x6E299, size: 0x8, addend: 0x0, symName: _QNRTErrorDomain, symObjAddr: 0xF8, symBinAddr: 0x6276A8, symSize: 0x0 }
-  - { offsetInCU: 0x55, offset: 0x6E2B9, size: 0x8, addend: 0x0, symName: _QNRTStatisticAudioBitrateKey, symObjAddr: 0x100, symBinAddr: 0x6276B0, symSize: 0x0 }
-  - { offsetInCU: 0x6B, offset: 0x6E2CF, size: 0x8, addend: 0x0, symName: _QNRTStatisticVideoBitrateKey, symObjAddr: 0x108, symBinAddr: 0x6276B8, symSize: 0x0 }
-  - { offsetInCU: 0x81, offset: 0x6E2E5, size: 0x8, addend: 0x0, symName: _QNRTStatisticVideoFrameRateKey, symObjAddr: 0x110, symBinAddr: 0x6276C0, symSize: 0x0 }
-  - { offsetInCU: 0x27, offset: 0x6E324, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x4C30, symSize: 0x88 }
-  - { offsetInCU: 0x1D0, offset: 0x6E4CD, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x4C30, symSize: 0x88 }
-  - { offsetInCU: 0x213, offset: 0x6E510, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView initWithCoder:]', symObjAddr: 0x88, symBinAddr: 0x4CB8, symSize: 0xA0 }
-  - { offsetInCU: 0x25A, offset: 0x6E557, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView dealloc]', symObjAddr: 0x128, symBinAddr: 0x4D58, symSize: 0xB4 }
-  - { offsetInCU: 0x310, offset: 0x6E60D, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView commonInit]', symObjAddr: 0x1DC, symBinAddr: 0x4E0C, symSize: 0x140 }
-  - { offsetInCU: 0x38C, offset: 0x6E689, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setFrame:]', symObjAddr: 0x31C, symBinAddr: 0x4F4C, symSize: 0x98 }
-  - { offsetInCU: 0x3DB, offset: 0x6E6D8, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setBounds:]', symObjAddr: 0x3B4, symBinAddr: 0x4FE4, symSize: 0x98 }
-  - { offsetInCU: 0x42A, offset: 0x6E727, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setFillMode:]', symObjAddr: 0x44C, symBinAddr: 0x507C, symSize: 0xF4 }
-  - { offsetInCU: 0x4F4, offset: 0x6E7F1, size: 0x8, addend: 0x0, symName: '___29-[QNRTVideoView setFillMode:]_block_invoke', symObjAddr: 0x540, symBinAddr: 0x5170, symSize: 0x70 }
-  - { offsetInCU: 0x552, offset: 0x6E84F, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x5B0, symBinAddr: 0x51E0, symSize: 0x8 }
-  - { offsetInCU: 0x579, offset: 0x6E876, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x5B8, symBinAddr: 0x51E8, symSize: 0x8 }
-  - { offsetInCU: 0x598, offset: 0x6E895, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView rectForRTCView]', symObjAddr: 0x5C0, symBinAddr: 0x51F0, symSize: 0x25C }
-  - { offsetInCU: 0x65B, offset: 0x6E958, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setSize:]', symObjAddr: 0x81C, symBinAddr: 0x544C, symSize: 0x154 }
-  - { offsetInCU: 0x719, offset: 0x6EA16, size: 0x8, addend: 0x0, symName: '___25-[QNRTVideoView setSize:]_block_invoke', symObjAddr: 0x970, symBinAddr: 0x55A0, symSize: 0x70 }
-  - { offsetInCU: 0x777, offset: 0x6EA74, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView renderFrame:]', symObjAddr: 0x9E0, symBinAddr: 0x5610, symSize: 0x50 }
-  - { offsetInCU: 0x7BA, offset: 0x6EAB7, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView fillMode]', symObjAddr: 0xA30, symBinAddr: 0x5660, symSize: 0x10 }
-  - { offsetInCU: 0x7F1, offset: 0x6EAEE, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView rtcView]', symObjAddr: 0xA40, symBinAddr: 0x5670, symSize: 0x10 }
-  - { offsetInCU: 0x828, offset: 0x6EB25, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setRtcView:]', symObjAddr: 0xA50, symBinAddr: 0x5680, symSize: 0x14 }
-  - { offsetInCU: 0x869, offset: 0x6EB66, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView videoSize]', symObjAddr: 0xA64, symBinAddr: 0x5694, symSize: 0x14 }
-  - { offsetInCU: 0x89E, offset: 0x6EB9B, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setVideoSize:]', symObjAddr: 0xA78, symBinAddr: 0x56A8, symSize: 0x14 }
-  - { offsetInCU: 0x8DD, offset: 0x6EBDA, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView .cxx_destruct]', symObjAddr: 0xA8C, symBinAddr: 0x56BC, symSize: 0x14 }
-  - { offsetInCU: 0x27, offset: 0x6EDDA, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer init]', symObjAddr: 0x0, symBinAddr: 0x56D0, symSize: 0x188 }
-  - { offsetInCU: 0xC8B, offset: 0x6FA3E, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer init]', symObjAddr: 0x0, symBinAddr: 0x56D0, symSize: 0x188 }
-  - { offsetInCU: 0xD6D, offset: 0x6FB20, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVolume:]', symObjAddr: 0x188, symBinAddr: 0x5858, symSize: 0x108 }
-  - { offsetInCU: 0xE3D, offset: 0x6FBF0, size: 0x8, addend: 0x0, symName: '___24-[QNRTPlayer setVolume:]_block_invoke', symObjAddr: 0x290, symBinAddr: 0x5960, symSize: 0x9C }
-  - { offsetInCU: 0xE8C, offset: 0x6FC3F, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40r, symObjAddr: 0x32C, symBinAddr: 0x59FC, symSize: 0x34 }
-  - { offsetInCU: 0xEB5, offset: 0x6FC68, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40r, symObjAddr: 0x360, symBinAddr: 0x5A30, symSize: 0x2C }
-  - { offsetInCU: 0xED4, offset: 0x6FC87, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer muteAudio:]', symObjAddr: 0x38C, symBinAddr: 0x5A5C, symSize: 0xDC }
-  - { offsetInCU: 0xF6E, offset: 0x6FD21, size: 0x8, addend: 0x0, symName: '___24-[QNRTPlayer muteAudio:]_block_invoke', symObjAddr: 0x468, symBinAddr: 0x5B38, symSize: 0x40 }
-  - { offsetInCU: 0xFA9, offset: 0x6FD5C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer muteVideo:]', symObjAddr: 0x4A8, symBinAddr: 0x5B78, symSize: 0xE4 }
-  - { offsetInCU: 0x1047, offset: 0x6FDFA, size: 0x8, addend: 0x0, symName: '___24-[QNRTPlayer muteVideo:]_block_invoke', symObjAddr: 0x58C, symBinAddr: 0x5C5C, symSize: 0x64 }
-  - { offsetInCU: 0x1096, offset: 0x6FE49, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playWithUrl:supportHttps:]', symObjAddr: 0x600, symBinAddr: 0x5CC0, symSize: 0x128 }
-  - { offsetInCU: 0x114B, offset: 0x6FEFE, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke', symObjAddr: 0x728, symBinAddr: 0x5DE8, symSize: 0x178 }
-  - { offsetInCU: 0x11C1, offset: 0x6FF74, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke_2', symObjAddr: 0x8A0, symBinAddr: 0x5F60, symSize: 0x284 }
-  - { offsetInCU: 0x12B0, offset: 0x70063, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke_3', symObjAddr: 0xB24, symBinAddr: 0x61E4, symSize: 0x384 }
-  - { offsetInCU: 0x13CE, offset: 0x70181, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke_4', symObjAddr: 0xEA8, symBinAddr: 0x6568, symSize: 0x1A0 }
-  - { offsetInCU: 0x14A1, offset: 0x70254, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32w, symObjAddr: 0x1048, symBinAddr: 0x6708, symSize: 0xC }
-  - { offsetInCU: 0x14CA, offset: 0x7027D, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32w, symObjAddr: 0x1054, symBinAddr: 0x6714, symSize: 0x8 }
-  - { offsetInCU: 0x14E9, offset: 0x7029C, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke.31', symObjAddr: 0x105C, symBinAddr: 0x671C, symSize: 0x184 }
-  - { offsetInCU: 0x15CC, offset: 0x7037F, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40w, symObjAddr: 0x11E0, symBinAddr: 0x68A0, symSize: 0x30 }
-  - { offsetInCU: 0x15F5, offset: 0x703A8, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40w, symObjAddr: 0x1210, symBinAddr: 0x68D0, symSize: 0x28 }
-  - { offsetInCU: 0x1614, offset: 0x703C7, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56w, symObjAddr: 0x1238, symBinAddr: 0x68F8, symSize: 0x40 }
-  - { offsetInCU: 0x163D, offset: 0x703F0, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56w, symObjAddr: 0x1278, symBinAddr: 0x6938, symSize: 0x38 }
-  - { offsetInCU: 0x165C, offset: 0x7040F, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48w, symObjAddr: 0x12B0, symBinAddr: 0x6970, symSize: 0x38 }
-  - { offsetInCU: 0x1685, offset: 0x70438, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48w, symObjAddr: 0x12E8, symBinAddr: 0x69A8, symSize: 0x30 }
-  - { offsetInCU: 0x16A4, offset: 0x70457, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s, symObjAddr: 0x1318, symBinAddr: 0x69D8, symSize: 0x28 }
-  - { offsetInCU: 0x16CD, offset: 0x70480, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0x1340, symBinAddr: 0x6A00, symSize: 0x28 }
-  - { offsetInCU: 0x16EC, offset: 0x7049F, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer stop]', symObjAddr: 0x1368, symBinAddr: 0x6A28, symSize: 0xEC }
-  - { offsetInCU: 0x177E, offset: 0x70531, size: 0x8, addend: 0x0, symName: '___18-[QNRTPlayer stop]_block_invoke', symObjAddr: 0x1454, symBinAddr: 0x6B14, symSize: 0xB4 }
-  - { offsetInCU: 0x17BD, offset: 0x70570, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setSpeakerOn:]', symObjAddr: 0x1508, symBinAddr: 0x6BC8, symSize: 0x84 }
-  - { offsetInCU: 0x1812, offset: 0x705C5, size: 0x8, addend: 0x0, symName: '___27-[QNRTPlayer setSpeakerOn:]_block_invoke', symObjAddr: 0x158C, symBinAddr: 0x6C4C, symSize: 0x1B8 }
-  - { offsetInCU: 0x1922, offset: 0x706D5, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setStatisticInterval:]', symObjAddr: 0x1744, symBinAddr: 0x6E04, symSize: 0x80 }
-  - { offsetInCU: 0x197B, offset: 0x7072E, size: 0x8, addend: 0x0, symName: '___35-[QNRTPlayer setStatisticInterval:]_block_invoke', symObjAddr: 0x17C4, symBinAddr: 0x6E84, symSize: 0xD0 }
-  - { offsetInCU: 0x1A13, offset: 0x707C6, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer takeScreenshotCallback:]', symObjAddr: 0x1894, symBinAddr: 0x6F54, symSize: 0xAC }
-  - { offsetInCU: 0x1A75, offset: 0x70828, size: 0x8, addend: 0x0, symName: '___37-[QNRTPlayer takeScreenshotCallback:]_block_invoke', symObjAddr: 0x1940, symBinAddr: 0x7000, symSize: 0x1C4 }
-  - { offsetInCU: 0x1B4C, offset: 0x708FF, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b, symObjAddr: 0x1B04, symBinAddr: 0x71C4, symSize: 0x34 }
-  - { offsetInCU: 0x1B75, offset: 0x70928, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setJitterBufferMinDelay:]', symObjAddr: 0x1B38, symBinAddr: 0x71F8, symSize: 0x1F4 }
-  - { offsetInCU: 0x1C8E, offset: 0x70A41, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer dealloc]', symObjAddr: 0x1D2C, symBinAddr: 0x73EC, symSize: 0xF4 }
-  - { offsetInCU: 0x1D0C, offset: 0x70ABF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playWhepStreamRequestStreamURL:offerSDP:supportHttps:completionHandler:]', symObjAddr: 0x1E20, symBinAddr: 0x74E0, symSize: 0x260 }
-  - { offsetInCU: 0x1E12, offset: 0x70BC5, size: 0x8, addend: 0x0, symName: '___85-[QNRTPlayer playWhepStreamRequestStreamURL:offerSDP:supportHttps:completionHandler:]_block_invoke', symObjAddr: 0x2080, symBinAddr: 0x7740, symSize: 0x124 }
-  - { offsetInCU: 0x1EB5, offset: 0x70C68, size: 0x8, addend: 0x0, symName: '___85-[QNRTPlayer playWhepStreamRequestStreamURL:offerSDP:supportHttps:completionHandler:]_block_invoke_2', symObjAddr: 0x21A4, symBinAddr: 0x7864, symSize: 0x4B4 }
-  - { offsetInCU: 0x21E0, offset: 0x70F93, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56b, symObjAddr: 0x2658, symBinAddr: 0x7D18, symSize: 0x44 }
-  - { offsetInCU: 0x2209, offset: 0x70FBC, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s, symObjAddr: 0x269C, symBinAddr: 0x7D5C, symSize: 0x38 }
-  - { offsetInCU: 0x2228, offset: 0x70FDB, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer disconnectWhepStreamRequest:]', symObjAddr: 0x26D4, symBinAddr: 0x7D94, symSize: 0x108 }
-  - { offsetInCU: 0x228F, offset: 0x71042, size: 0x8, addend: 0x0, symName: '___42-[QNRTPlayer disconnectWhepStreamRequest:]_block_invoke', symObjAddr: 0x27DC, symBinAddr: 0x7E9C, symSize: 0xEC }
-  - { offsetInCU: 0x232E, offset: 0x710E1, size: 0x8, addend: 0x0, symName: '___42-[QNRTPlayer disconnectWhepStreamRequest:]_block_invoke_2', symObjAddr: 0x28C8, symBinAddr: 0x7F88, symSize: 0x2E0 }
-  - { offsetInCU: 0x24DF, offset: 0x71292, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s, symObjAddr: 0x2BA8, symBinAddr: 0x8268, symSize: 0x30 }
-  - { offsetInCU: 0x2508, offset: 0x712BB, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s, symObjAddr: 0x2BD8, symBinAddr: 0x8298, symSize: 0x30 }
-  - { offsetInCU: 0x2527, offset: 0x712DA, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playRTCStreamRequestStreamURL:offerSDP:clientip:supportHttps:completionHandler:]', symObjAddr: 0x2C08, symBinAddr: 0x82C8, symSize: 0x3AC }
-  - { offsetInCU: 0x264F, offset: 0x71402, size: 0x8, addend: 0x0, symName: '___93-[QNRTPlayer playRTCStreamRequestStreamURL:offerSDP:clientip:supportHttps:completionHandler:]_block_invoke', symObjAddr: 0x2FB4, symBinAddr: 0x8674, symSize: 0x124 }
-  - { offsetInCU: 0x26F2, offset: 0x714A5, size: 0x8, addend: 0x0, symName: '___93-[QNRTPlayer playRTCStreamRequestStreamURL:offerSDP:clientip:supportHttps:completionHandler:]_block_invoke_2', symObjAddr: 0x30D8, symBinAddr: 0x8798, symSize: 0x5D8 }
-  - { offsetInCU: 0x29CC, offset: 0x7177F, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer createOffer:completionHandler:]', symObjAddr: 0x36B0, symBinAddr: 0x8D70, symSize: 0xC8 }
-  - { offsetInCU: 0x2A22, offset: 0x717D5, size: 0x8, addend: 0x0, symName: '___44-[QNRTPlayer createOffer:completionHandler:]_block_invoke', symObjAddr: 0x3778, symBinAddr: 0x8E38, symSize: 0x1C0 }
-  - { offsetInCU: 0x2B2A, offset: 0x718DD, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0x3938, symBinAddr: 0x8FF8, symSize: 0x10 }
-  - { offsetInCU: 0x2B53, offset: 0x71906, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setRemoteWithSDP:]', symObjAddr: 0x3948, symBinAddr: 0x9008, symSize: 0x128 }
-  - { offsetInCU: 0x2BBA, offset: 0x7196D, size: 0x8, addend: 0x0, symName: '___31-[QNRTPlayer setRemoteWithSDP:]_block_invoke', symObjAddr: 0x3A70, symBinAddr: 0x9130, symSize: 0x320 }
-  - { offsetInCU: 0x2CFF, offset: 0x71AB2, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer createSubscribePeerConnection]', symObjAddr: 0x3D90, symBinAddr: 0x9450, symSize: 0x124 }
-  - { offsetInCU: 0x2D7D, offset: 0x71B30, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer closeSubscribePeerConnection]', symObjAddr: 0x3EB4, symBinAddr: 0x9574, symSize: 0x158 }
-  - { offsetInCU: 0x2E55, offset: 0x71C08, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer defaultRTCConfiguration]', symObjAddr: 0x400C, symBinAddr: 0x96CC, symSize: 0x5C }
-  - { offsetInCU: 0x2E9A, offset: 0x71C4D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer defaultSDPConstraints]', symObjAddr: 0x4068, symBinAddr: 0x9728, symSize: 0xAC }
-  - { offsetInCU: 0x2EF0, offset: 0x71CA3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer defaultPeerConnectionConstraints]', symObjAddr: 0x4114, symBinAddr: 0x97D4, symSize: 0x50 }
-  - { offsetInCU: 0x2F46, offset: 0x71CF9, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer resetAll]', symObjAddr: 0x4164, symBinAddr: 0x9824, symSize: 0x150 }
-  - { offsetInCU: 0x2F7A, offset: 0x71D2D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didChangeSignalingState:]', symObjAddr: 0x42B4, symBinAddr: 0x9974, symSize: 0xAC }
-  - { offsetInCU: 0x3016, offset: 0x71DC9, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didAddStream:]', symObjAddr: 0x4360, symBinAddr: 0x9A20, symSize: 0x15C }
-  - { offsetInCU: 0x30D3, offset: 0x71E86, size: 0x8, addend: 0x0, symName: '___42-[QNRTPlayer peerConnection:didAddStream:]_block_invoke', symObjAddr: 0x44BC, symBinAddr: 0x9B7C, symSize: 0x338 }
-  - { offsetInCU: 0x31A6, offset: 0x71F59, size: 0x8, addend: 0x0, symName: '___42-[QNRTPlayer peerConnection:didAddStream:]_block_invoke_2', symObjAddr: 0x47F4, symBinAddr: 0x9EB4, symSize: 0x15C }
-  - { offsetInCU: 0x31E8, offset: 0x71F9B, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didRemoveStream:]', symObjAddr: 0x4950, symBinAddr: 0xA010, symSize: 0xC0 }
-  - { offsetInCU: 0x3284, offset: 0x72037, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnectionShouldNegotiate:]', symObjAddr: 0x4A10, symBinAddr: 0xA0D0, symSize: 0xA4 }
-  - { offsetInCU: 0x330F, offset: 0x720C2, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didChangeIceConnectionState:]', symObjAddr: 0x4AB4, symBinAddr: 0xA174, symSize: 0xB4 }
-  - { offsetInCU: 0x3382, offset: 0x72135, size: 0x8, addend: 0x0, symName: '___57-[QNRTPlayer peerConnection:didChangeIceConnectionState:]_block_invoke', symObjAddr: 0x4B68, symBinAddr: 0xA228, symSize: 0x55C }
-  - { offsetInCU: 0x354C, offset: 0x722FF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didChangeIceGatheringState:]', symObjAddr: 0x50C4, symBinAddr: 0xA784, symSize: 0xAC }
-  - { offsetInCU: 0x35E8, offset: 0x7239B, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didGenerateIceCandidate:]', symObjAddr: 0x5170, symBinAddr: 0xA830, symSize: 0xC0 }
-  - { offsetInCU: 0x3684, offset: 0x72437, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didRemoveIceCandidates:]', symObjAddr: 0x5230, symBinAddr: 0xA8F0, symSize: 0xD4 }
-  - { offsetInCU: 0x3720, offset: 0x724D3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didOpenDataChannel:]', symObjAddr: 0x5304, symBinAddr: 0xA9C4, symSize: 0xC0 }
-  - { offsetInCU: 0x37BC, offset: 0x7256F, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoRender:width:height:]', symObjAddr: 0x53C4, symBinAddr: 0xAA84, symSize: 0x34 }
-  - { offsetInCU: 0x381F, offset: 0x725D2, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoRender:didGetPixelBuffer:]', symObjAddr: 0x53F8, symBinAddr: 0xAAB8, symSize: 0x280 }
-  - { offsetInCU: 0x38D3, offset: 0x72686, size: 0x8, addend: 0x0, symName: '___44-[QNRTPlayer videoRender:didGetPixelBuffer:]_block_invoke', symObjAddr: 0x5678, symBinAddr: 0xAD38, symSize: 0x120 }
-  - { offsetInCU: 0x395F, offset: 0x72712, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer audioTrack:didGetAudioBuffer:bitsPerSample:sampleRate:]', symObjAddr: 0x5798, symBinAddr: 0xAE58, symSize: 0x1D4 }
-  - { offsetInCU: 0x3A11, offset: 0x727C4, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer startStatisticTimer]', symObjAddr: 0x596C, symBinAddr: 0xB02C, symSize: 0xA4 }
-  - { offsetInCU: 0x3A5B, offset: 0x7280E, size: 0x8, addend: 0x0, symName: '___33-[QNRTPlayer startStatisticTimer]_block_invoke', symObjAddr: 0x5A10, symBinAddr: 0xB0D0, symSize: 0xB0 }
-  - { offsetInCU: 0x3A9D, offset: 0x72850, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer stopStatisticTimer]', symObjAddr: 0x5AC0, symBinAddr: 0xB180, symSize: 0x60 }
-  - { offsetInCU: 0x3AD1, offset: 0x72884, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer statisticTimerFired]', symObjAddr: 0x5B20, symBinAddr: 0xB1E0, symSize: 0x74 }
-  - { offsetInCU: 0x3B1B, offset: 0x728CE, size: 0x8, addend: 0x0, symName: '___33-[QNRTPlayer statisticTimerFired]_block_invoke', symObjAddr: 0x5B94, symBinAddr: 0xB254, symSize: 0x98 }
-  - { offsetInCU: 0x3B5D, offset: 0x72910, size: 0x8, addend: 0x0, symName: '___33-[QNRTPlayer statisticTimerFired]_block_invoke_2', symObjAddr: 0x5C2C, symBinAddr: 0xB2EC, symSize: 0x5A8 }
-  - { offsetInCU: 0x3C9B, offset: 0x72A4E, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer handleMediaStatsReport:trackStatistics:lastBoundStatistics:lastTrackStatistics:type:]', symObjAddr: 0x61D4, symBinAddr: 0xB894, symSize: 0x3E4 }
-  - { offsetInCU: 0x3E04, offset: 0x72BB7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer combineMediaStatisticsFromStats:isOut:]', symObjAddr: 0x65B8, symBinAddr: 0xBC78, symSize: 0x614 }
-  - { offsetInCU: 0x3F07, offset: 0x72CBA, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer convertI420PixelBuffer:toNV12PixelBuffer:]', symObjAddr: 0x6BCC, symBinAddr: 0xC28C, symSize: 0x358 }
-  - { offsetInCU: 0x4376, offset: 0x73129, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer convertFrame:]', symObjAddr: 0x6F24, symBinAddr: 0xC5E4, symSize: 0x13C }
-  - { offsetInCU: 0x44AA, offset: 0x7325D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoView:didChangeVideoSize:]', symObjAddr: 0x7060, symBinAddr: 0xC720, symSize: 0x9C }
-  - { offsetInCU: 0x4542, offset: 0x732F5, size: 0x8, addend: 0x0, symName: '+[QNRTPlayer enableFileLogging]', symObjAddr: 0x70FC, symBinAddr: 0xC7BC, symSize: 0xC }
-  - { offsetInCU: 0x4572, offset: 0x73325, size: 0x8, addend: 0x0, symName: '+[QNRTPlayer versionInfo]', symObjAddr: 0x7108, symBinAddr: 0xC7C8, symSize: 0xC }
-  - { offsetInCU: 0x45A6, offset: 0x73359, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer delegate]', symObjAddr: 0x7114, symBinAddr: 0xC7D4, symSize: 0x18 }
-  - { offsetInCU: 0x45DD, offset: 0x73390, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setDelegate:]', symObjAddr: 0x712C, symBinAddr: 0xC7EC, symSize: 0xC }
-  - { offsetInCU: 0x461E, offset: 0x733D1, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playState]', symObjAddr: 0x7138, symBinAddr: 0xC7F8, symSize: 0x8 }
-  - { offsetInCU: 0x4655, offset: 0x73408, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setPlayState:]', symObjAddr: 0x7140, symBinAddr: 0xC800, symSize: 0x8 }
-  - { offsetInCU: 0x4692, offset: 0x73445, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer isPlaying]', symObjAddr: 0x7148, symBinAddr: 0xC808, symSize: 0x8 }
-  - { offsetInCU: 0x46C9, offset: 0x7347C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setIsPlaying:]', symObjAddr: 0x7150, symBinAddr: 0xC810, symSize: 0x8 }
-  - { offsetInCU: 0x4704, offset: 0x734B7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playUrl]', symObjAddr: 0x7158, symBinAddr: 0xC818, symSize: 0x8 }
-  - { offsetInCU: 0x473B, offset: 0x734EE, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setPlayUrl:]', symObjAddr: 0x7160, symBinAddr: 0xC820, symSize: 0x8 }
-  - { offsetInCU: 0x477A, offset: 0x7352D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer volume]', symObjAddr: 0x7168, symBinAddr: 0xC828, symSize: 0x8 }
-  - { offsetInCU: 0x47AF, offset: 0x73562, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer width]', symObjAddr: 0x7170, symBinAddr: 0xC830, symSize: 0x8 }
-  - { offsetInCU: 0x47E4, offset: 0x73597, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setWidth:]', symObjAddr: 0x7178, symBinAddr: 0xC838, symSize: 0x8 }
-  - { offsetInCU: 0x4822, offset: 0x735D5, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer height]', symObjAddr: 0x7180, symBinAddr: 0xC840, symSize: 0x8 }
-  - { offsetInCU: 0x4857, offset: 0x7360A, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setHeight:]', symObjAddr: 0x7188, symBinAddr: 0xC848, symSize: 0x8 }
-  - { offsetInCU: 0x4895, offset: 0x73648, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer statisticInterval]', symObjAddr: 0x7190, symBinAddr: 0xC850, symSize: 0x8 }
-  - { offsetInCU: 0x48CC, offset: 0x7367F, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playView]', symObjAddr: 0x7198, symBinAddr: 0xC858, symSize: 0x8 }
-  - { offsetInCU: 0x4903, offset: 0x736B6, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setPlayView:]', symObjAddr: 0x71A0, symBinAddr: 0xC860, symSize: 0xC }
-  - { offsetInCU: 0x4944, offset: 0x736F7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer factory]', symObjAddr: 0x71AC, symBinAddr: 0xC86C, symSize: 0x8 }
-  - { offsetInCU: 0x497B, offset: 0x7372E, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setFactory:]', symObjAddr: 0x71B4, symBinAddr: 0xC874, symSize: 0xC }
-  - { offsetInCU: 0x49BC, offset: 0x7376F, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer subscribePeerConnection]', symObjAddr: 0x71C0, symBinAddr: 0xC880, symSize: 0x8 }
-  - { offsetInCU: 0x49F3, offset: 0x737A6, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setSubscribePeerConnection:]', symObjAddr: 0x71C8, symBinAddr: 0xC888, symSize: 0xC }
-  - { offsetInCU: 0x4A34, offset: 0x737E7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer subscribePeerConnectionState]', symObjAddr: 0x71D4, symBinAddr: 0xC894, symSize: 0x8 }
-  - { offsetInCU: 0x4A6B, offset: 0x7381E, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setSubscribePeerConnectionState:]', symObjAddr: 0x71DC, symBinAddr: 0xC89C, symSize: 0x8 }
-  - { offsetInCU: 0x4AA8, offset: 0x7385B, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoRender]', symObjAddr: 0x71E4, symBinAddr: 0xC8A4, symSize: 0x8 }
-  - { offsetInCU: 0x4ADF, offset: 0x73892, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoRender:]', symObjAddr: 0x71EC, symBinAddr: 0xC8AC, symSize: 0xC }
-  - { offsetInCU: 0x4B20, offset: 0x738D3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer operationQueue]', symObjAddr: 0x71F8, symBinAddr: 0xC8B8, symSize: 0x8 }
-  - { offsetInCU: 0x4B57, offset: 0x7390A, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setOperationQueue:]', symObjAddr: 0x7200, symBinAddr: 0xC8C0, symSize: 0xC }
-  - { offsetInCU: 0x4B98, offset: 0x7394B, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer subStatisticInterval]', symObjAddr: 0x720C, symBinAddr: 0xC8CC, symSize: 0x8 }
-  - { offsetInCU: 0x4BCF, offset: 0x73982, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setSubStatisticInterval:]', symObjAddr: 0x7214, symBinAddr: 0xC8D4, symSize: 0x8 }
-  - { offsetInCU: 0x4C0C, offset: 0x739BF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer statisticTimer]', symObjAddr: 0x721C, symBinAddr: 0xC8DC, symSize: 0x8 }
-  - { offsetInCU: 0x4C43, offset: 0x739F6, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setStatisticTimer:]', symObjAddr: 0x7224, symBinAddr: 0xC8E4, symSize: 0xC }
-  - { offsetInCU: 0x4C84, offset: 0x73A37, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer audioLastRtcStats]', symObjAddr: 0x7230, symBinAddr: 0xC8F0, symSize: 0x8 }
-  - { offsetInCU: 0x4CBB, offset: 0x73A6E, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setAudioLastRtcStats:]', symObjAddr: 0x7238, symBinAddr: 0xC8F8, symSize: 0xC }
-  - { offsetInCU: 0x4CFC, offset: 0x73AAF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoLastRtcStats]', symObjAddr: 0x7244, symBinAddr: 0xC904, symSize: 0x8 }
-  - { offsetInCU: 0x4D33, offset: 0x73AE6, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoLastRtcStats:]', symObjAddr: 0x724C, symBinAddr: 0xC90C, symSize: 0xC }
-  - { offsetInCU: 0x4D74, offset: 0x73B27, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer audioBitrate]', symObjAddr: 0x7258, symBinAddr: 0xC918, symSize: 0x8 }
-  - { offsetInCU: 0x4DA9, offset: 0x73B5C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setAudioBitrate:]', symObjAddr: 0x7260, symBinAddr: 0xC920, symSize: 0x8 }
-  - { offsetInCU: 0x4DE7, offset: 0x73B9A, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoBitrate]', symObjAddr: 0x7268, symBinAddr: 0xC928, symSize: 0x8 }
-  - { offsetInCU: 0x4E1C, offset: 0x73BCF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoBitrate:]', symObjAddr: 0x7270, symBinAddr: 0xC930, symSize: 0x8 }
-  - { offsetInCU: 0x4E5A, offset: 0x73C0D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoFrameRate]', symObjAddr: 0x7278, symBinAddr: 0xC938, symSize: 0x8 }
-  - { offsetInCU: 0x4E91, offset: 0x73C44, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoFrameRate:]', symObjAddr: 0x7280, symBinAddr: 0xC940, symSize: 0x8 }
-  - { offsetInCU: 0x4ECE, offset: 0x73C81, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer audioTrack]', symObjAddr: 0x7288, symBinAddr: 0xC948, symSize: 0x8 }
-  - { offsetInCU: 0x4F05, offset: 0x73CB8, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setAudioTrack:]', symObjAddr: 0x7290, symBinAddr: 0xC950, symSize: 0xC }
-  - { offsetInCU: 0x4F46, offset: 0x73CF9, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoTrack]', symObjAddr: 0x729C, symBinAddr: 0xC95C, symSize: 0x8 }
-  - { offsetInCU: 0x4F7D, offset: 0x73D30, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoTrack:]', symObjAddr: 0x72A4, symBinAddr: 0xC964, symSize: 0xC }
-  - { offsetInCU: 0x4FBE, offset: 0x73D71, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer shouldReportFirstAudioFrame]', symObjAddr: 0x72B0, symBinAddr: 0xC970, symSize: 0x8 }
-  - { offsetInCU: 0x4FF5, offset: 0x73DA8, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setShouldReportFirstAudioFrame:]', symObjAddr: 0x72B8, symBinAddr: 0xC978, symSize: 0x8 }
-  - { offsetInCU: 0x5030, offset: 0x73DE3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer shouldReportFirstVideoFrame]', symObjAddr: 0x72C0, symBinAddr: 0xC980, symSize: 0x8 }
-  - { offsetInCU: 0x5067, offset: 0x73E1A, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setShouldReportFirstVideoFrame:]', symObjAddr: 0x72C8, symBinAddr: 0xC988, symSize: 0x8 }
-  - { offsetInCU: 0x50A2, offset: 0x73E55, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer outputSpeaker]', symObjAddr: 0x72D0, symBinAddr: 0xC990, symSize: 0x8 }
-  - { offsetInCU: 0x50D9, offset: 0x73E8C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setOutputSpeaker:]', symObjAddr: 0x72D8, symBinAddr: 0xC998, symSize: 0x8 }
-  - { offsetInCU: 0x5114, offset: 0x73EC7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer location]', symObjAddr: 0x72E0, symBinAddr: 0xC9A0, symSize: 0x8 }
-  - { offsetInCU: 0x514B, offset: 0x73EFE, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setLocation:]', symObjAddr: 0x72E8, symBinAddr: 0xC9A8, symSize: 0x8 }
-  - { offsetInCU: 0x518A, offset: 0x73F3D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer resultCallback]', symObjAddr: 0x72F0, symBinAddr: 0xC9B0, symSize: 0x8 }
-  - { offsetInCU: 0x51C1, offset: 0x73F74, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setResultCallback:]', symObjAddr: 0x72F8, symBinAddr: 0xC9B8, symSize: 0x8 }
-  - { offsetInCU: 0x5200, offset: 0x73FB3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer .cxx_destruct]', symObjAddr: 0x7300, symBinAddr: 0xC9C0, symSize: 0xBC }
+  - { offset: 0x74ABB, size: 0x8, addend: 0x0, symName: _QNRTPlayerKitVersionString, symObjAddr: 0x0, symBinAddr: 0x3DAD00, symSize: 0x0 }
+  - { offset: 0x74AF0, size: 0x8, addend: 0x0, symName: _QNRTPlayerKitVersionNumber, symObjAddr: 0x38, symBinAddr: 0x3DAD38, symSize: 0x0 }
+  - { offset: 0x74B2D, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender description]', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x180 }
+  - { offset: 0x74D37, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender description]', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0x180 }
+  - { offset: 0x74D7E, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender renderFrame:]', symObjAddr: 0x180, symBinAddr: 0x8180, symSize: 0x378 }
+  - { offset: 0x74FA7, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender setSize:]', symObjAddr: 0x4F8, symBinAddr: 0x84F8, symSize: 0x48 }
+  - { offset: 0x74FE6, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender sessionId]', symObjAddr: 0x540, symBinAddr: 0x8540, symSize: 0x8 }
+  - { offset: 0x7501D, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender renderView]', symObjAddr: 0x548, symBinAddr: 0x8548, symSize: 0x8 }
+  - { offset: 0x75054, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender setRenderView:]', symObjAddr: 0x550, symBinAddr: 0x8550, symSize: 0xC }
+  - { offset: 0x75095, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender delegate]', symObjAddr: 0x55C, symBinAddr: 0x855C, symSize: 0x18 }
+  - { offset: 0x750CC, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender setDelegate:]', symObjAddr: 0x574, symBinAddr: 0x8574, symSize: 0xC }
+  - { offset: 0x7510D, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender videoTrack]', symObjAddr: 0x580, symBinAddr: 0x8580, symSize: 0x8 }
+  - { offset: 0x75144, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender setVideoTrack:]', symObjAddr: 0x588, symBinAddr: 0x8588, symSize: 0xC }
+  - { offset: 0x75185, size: 0x8, addend: 0x0, symName: '-[QNRTVideoRender .cxx_destruct]', symObjAddr: 0x594, symBinAddr: 0x8594, symSize: 0x44 }
+  - { offset: 0x752BD, size: 0x8, addend: 0x0, symName: '+[QNRTBase enableFileLogging]', symObjAddr: 0x0, symBinAddr: 0x85D8, symSize: 0x2E0 }
+  - { offset: 0x752D7, size: 0x8, addend: 0x0, symName: _playerFileLogger, symObjAddr: 0x2C98, symBinAddr: 0x4D1A60, symSize: 0x0 }
+  - { offset: 0x753C3, size: 0x8, addend: 0x0, symName: '+[QNRTBase enableFileLogging]', symObjAddr: 0x0, symBinAddr: 0x85D8, symSize: 0x2E0 }
+  - { offset: 0x755DA, size: 0x8, addend: 0x0, symName: '___29+[QNRTBase enableFileLogging]_block_invoke', symObjAddr: 0x2E0, symBinAddr: 0x88B8, symSize: 0x2C4 }
+  - { offset: 0x756A7, size: 0x8, addend: 0x0, symName: '+[QNRTBase versionInfo]', symObjAddr: 0x5A4, symBinAddr: 0x8B7C, symSize: 0xB4 }
+  - { offset: 0x757E8, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender displayLayer]', symObjAddr: 0x0, symBinAddr: 0x8C30, symSize: 0x88 }
+  - { offset: 0x758C0, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender displayLayer]', symObjAddr: 0x0, symBinAddr: 0x8C30, symSize: 0x88 }
+  - { offset: 0x758F7, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender init]', symObjAddr: 0x88, symBinAddr: 0x8CB8, symSize: 0x94 }
+  - { offset: 0x7592E, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender initWithFrame:]', symObjAddr: 0x11C, symBinAddr: 0x8D4C, symSize: 0x94 }
+  - { offset: 0x75971, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender awakeFromNib]', symObjAddr: 0x1B0, symBinAddr: 0x8DE0, symSize: 0x84 }
+  - { offset: 0x759A4, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender layoutSubviews]', symObjAddr: 0x234, symBinAddr: 0x8E64, symSize: 0x34 }
+  - { offset: 0x759D7, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender reset]', symObjAddr: 0x268, symBinAddr: 0x8E98, symSize: 0x30 }
+  - { offset: 0x75A0A, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender getFormatType:]', symObjAddr: 0x298, symBinAddr: 0x8EC8, symSize: 0x1C }
+  - { offset: 0x75A4B, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender setFillMode:]', symObjAddr: 0x2B4, symBinAddr: 0x8EE4, symSize: 0x80 }
+  - { offset: 0x75AC5, size: 0x8, addend: 0x0, symName: '___36-[QNSampleBufferRender setFillMode:]_block_invoke', symObjAddr: 0x334, symBinAddr: 0x8F64, symSize: 0x70 }
+  - { offset: 0x75B23, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x3A4, symBinAddr: 0x8FD4, symSize: 0x8 }
+  - { offset: 0x75B4A, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x3AC, symBinAddr: 0x8FDC, symSize: 0x8 }
+  - { offset: 0x75B69, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender rectForRTCView]', symObjAddr: 0x3B4, symBinAddr: 0x8FE4, symSize: 0x258 }
+  - { offset: 0x75C2C, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender renderVideoPixelBuffer:]', symObjAddr: 0x60C, symBinAddr: 0x923C, symSize: 0x208 }
+  - { offset: 0x75EDA, size: 0x8, addend: 0x0, symName: '___47-[QNSampleBufferRender renderVideoPixelBuffer:]_block_invoke', symObjAddr: 0x814, symBinAddr: 0x9444, symSize: 0x70 }
+  - { offset: 0x75F38, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender renderFrame:]', symObjAddr: 0x884, symBinAddr: 0x94B4, symSize: 0x4 }
+  - { offset: 0x75F73, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender setDisplayLayer:]', symObjAddr: 0x888, symBinAddr: 0x94B8, symSize: 0x14 }
+  - { offset: 0x75FB4, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender bufferVideoSize]', symObjAddr: 0x89C, symBinAddr: 0x94CC, symSize: 0x14 }
+  - { offset: 0x75FE9, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender setBufferVideoSize:]', symObjAddr: 0x8B0, symBinAddr: 0x94E0, symSize: 0x14 }
+  - { offset: 0x76028, size: 0x8, addend: 0x0, symName: '-[QNSampleBufferRender .cxx_destruct]', symObjAddr: 0x8C4, symBinAddr: 0x94F4, symSize: 0x14 }
+  - { offset: 0x76262, size: 0x8, addend: 0x0, symName: _QNRTErrorDomain, symObjAddr: 0xF8, symBinAddr: 0x4CECF8, symSize: 0x0 }
+  - { offset: 0x76282, size: 0x8, addend: 0x0, symName: _QNRTStatisticAudioBitrateKey, symObjAddr: 0x100, symBinAddr: 0x4CED00, symSize: 0x0 }
+  - { offset: 0x76298, size: 0x8, addend: 0x0, symName: _QNRTStatisticVideoBitrateKey, symObjAddr: 0x108, symBinAddr: 0x4CED08, symSize: 0x0 }
+  - { offset: 0x762AE, size: 0x8, addend: 0x0, symName: _QNRTStatisticVideoFrameRateKey, symObjAddr: 0x110, symBinAddr: 0x4CED10, symSize: 0x0 }
+  - { offset: 0x762ED, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x9508, symSize: 0x88 }
+  - { offset: 0x76476, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x9508, symSize: 0x88 }
+  - { offset: 0x764B9, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView initWithCoder:]', symObjAddr: 0x88, symBinAddr: 0x9590, symSize: 0xA0 }
+  - { offset: 0x76500, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView dealloc]', symObjAddr: 0x128, symBinAddr: 0x9630, symSize: 0xB4 }
+  - { offset: 0x765B6, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView commonInit]', symObjAddr: 0x1DC, symBinAddr: 0x96E4, symSize: 0x140 }
+  - { offset: 0x76632, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setFrame:]', symObjAddr: 0x31C, symBinAddr: 0x9824, symSize: 0x98 }
+  - { offset: 0x76681, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setBounds:]', symObjAddr: 0x3B4, symBinAddr: 0x98BC, symSize: 0x98 }
+  - { offset: 0x766D0, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setFillMode:]', symObjAddr: 0x44C, symBinAddr: 0x9954, symSize: 0xF4 }
+  - { offset: 0x7679A, size: 0x8, addend: 0x0, symName: '___29-[QNRTVideoView setFillMode:]_block_invoke', symObjAddr: 0x540, symBinAddr: 0x9A48, symSize: 0x70 }
+  - { offset: 0x767F8, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView rectForRTCView]', symObjAddr: 0x5C0, symBinAddr: 0x9AB8, symSize: 0x25C }
+  - { offset: 0x768BB, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setSize:]', symObjAddr: 0x81C, symBinAddr: 0x9D14, symSize: 0x154 }
+  - { offset: 0x76979, size: 0x8, addend: 0x0, symName: '___25-[QNRTVideoView setSize:]_block_invoke', symObjAddr: 0x970, symBinAddr: 0x9E68, symSize: 0x70 }
+  - { offset: 0x769D7, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView renderFrame:]', symObjAddr: 0x9E0, symBinAddr: 0x9ED8, symSize: 0x50 }
+  - { offset: 0x76A1A, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView fillMode]', symObjAddr: 0xA30, symBinAddr: 0x9F28, symSize: 0x10 }
+  - { offset: 0x76A51, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView rtcView]', symObjAddr: 0xA40, symBinAddr: 0x9F38, symSize: 0x10 }
+  - { offset: 0x76A88, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setRtcView:]', symObjAddr: 0xA50, symBinAddr: 0x9F48, symSize: 0x14 }
+  - { offset: 0x76AC9, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView videoSize]', symObjAddr: 0xA64, symBinAddr: 0x9F5C, symSize: 0x14 }
+  - { offset: 0x76AFE, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView setVideoSize:]', symObjAddr: 0xA78, symBinAddr: 0x9F70, symSize: 0x14 }
+  - { offset: 0x76B3D, size: 0x8, addend: 0x0, symName: '-[QNRTVideoView .cxx_destruct]', symObjAddr: 0xA8C, symBinAddr: 0x9F84, symSize: 0x14 }
+  - { offset: 0x76D53, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer init]', symObjAddr: 0x0, symBinAddr: 0x9F98, symSize: 0x50 }
+  - { offset: 0x76D6D, size: 0x8, addend: 0x0, symName: __tempPixelBuffer, symObjAddr: 0x296B8, symBinAddr: 0x4D3C00, symSize: 0x0 }
+  - { offset: 0x779D8, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer init]', symObjAddr: 0x0, symBinAddr: 0x9F98, symSize: 0x50 }
+  - { offset: 0x77A0F, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setupPlayer]', symObjAddr: 0x50, symBinAddr: 0x9FE8, symSize: 0x3A0 }
+  - { offset: 0x77B68, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer applicationDidBecomeActive:]', symObjAddr: 0x3F0, symBinAddr: 0xA388, symSize: 0xD8 }
+  - { offset: 0x77BC3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer handleInterruptionNotification:]', symObjAddr: 0x4C8, symBinAddr: 0xA460, symSize: 0x158 }
+  - { offset: 0x77C9C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer resumePlay:]', symObjAddr: 0x620, symBinAddr: 0xA5B8, symSize: 0xA4 }
+  - { offset: 0x77CDF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVolume:]', symObjAddr: 0x6C4, symBinAddr: 0xA65C, symSize: 0x108 }
+  - { offset: 0x77DAF, size: 0x8, addend: 0x0, symName: '___24-[QNRTPlayer setVolume:]_block_invoke', symObjAddr: 0x7CC, symBinAddr: 0xA764, symSize: 0x9C }
+  - { offset: 0x77DFE, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40r, symObjAddr: 0x868, symBinAddr: 0xA800, symSize: 0x34 }
+  - { offset: 0x77E27, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40r, symObjAddr: 0x89C, symBinAddr: 0xA834, symSize: 0x2C }
+  - { offset: 0x77E46, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer muteAudio:]', symObjAddr: 0x8C8, symBinAddr: 0xA860, symSize: 0xDC }
+  - { offset: 0x77EE0, size: 0x8, addend: 0x0, symName: '___24-[QNRTPlayer muteAudio:]_block_invoke', symObjAddr: 0x9A4, symBinAddr: 0xA93C, symSize: 0x40 }
+  - { offset: 0x77F1B, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer muteVideo:]', symObjAddr: 0x9E4, symBinAddr: 0xA97C, symSize: 0xE4 }
+  - { offset: 0x77FB9, size: 0x8, addend: 0x0, symName: '___24-[QNRTPlayer muteVideo:]_block_invoke', symObjAddr: 0xAC8, symBinAddr: 0xAA60, symSize: 0x64 }
+  - { offset: 0x78008, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playWithUrl:supportHttps:]', symObjAddr: 0xB3C, symBinAddr: 0xAAC4, symSize: 0x128 }
+  - { offset: 0x780BD, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke', symObjAddr: 0xC64, symBinAddr: 0xABEC, symSize: 0x178 }
+  - { offset: 0x78134, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke_2', symObjAddr: 0xDDC, symBinAddr: 0xAD64, symSize: 0x284 }
+  - { offset: 0x78223, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke_3', symObjAddr: 0x1060, symBinAddr: 0xAFE8, symSize: 0x428 }
+  - { offset: 0x78382, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke_4', symObjAddr: 0x1488, symBinAddr: 0xB410, symSize: 0x1A0 }
+  - { offset: 0x7845C, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32w, symObjAddr: 0x1628, symBinAddr: 0xB5B0, symSize: 0xC }
+  - { offset: 0x78485, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32w, symObjAddr: 0x1634, symBinAddr: 0xB5BC, symSize: 0x8 }
+  - { offset: 0x784A4, size: 0x8, addend: 0x0, symName: '___39-[QNRTPlayer playWithUrl:supportHttps:]_block_invoke.48', symObjAddr: 0x163C, symBinAddr: 0xB5C4, symSize: 0x184 }
+  - { offset: 0x7858E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40w, symObjAddr: 0x17C0, symBinAddr: 0xB748, symSize: 0x30 }
+  - { offset: 0x785B7, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40w, symObjAddr: 0x17F0, symBinAddr: 0xB778, symSize: 0x28 }
+  - { offset: 0x785D6, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56w, symObjAddr: 0x1818, symBinAddr: 0xB7A0, symSize: 0x40 }
+  - { offset: 0x785FF, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56w, symObjAddr: 0x1858, symBinAddr: 0xB7E0, symSize: 0x38 }
+  - { offset: 0x7861E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48w, symObjAddr: 0x1890, symBinAddr: 0xB818, symSize: 0x38 }
+  - { offset: 0x78647, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48w, symObjAddr: 0x18C8, symBinAddr: 0xB850, symSize: 0x30 }
+  - { offset: 0x78666, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s, symObjAddr: 0x18F8, symBinAddr: 0xB880, symSize: 0x28 }
+  - { offset: 0x7868F, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0x1920, symBinAddr: 0xB8A8, symSize: 0x28 }
+  - { offset: 0x786AE, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer stop]', symObjAddr: 0x1948, symBinAddr: 0xB8D0, symSize: 0xEC }
+  - { offset: 0x78742, size: 0x8, addend: 0x0, symName: '___18-[QNRTPlayer stop]_block_invoke', symObjAddr: 0x1A34, symBinAddr: 0xB9BC, symSize: 0xB4 }
+  - { offset: 0x78784, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setSpeakerOn:]', symObjAddr: 0x1AE8, symBinAddr: 0xBA70, symSize: 0x84 }
+  - { offset: 0x787DB, size: 0x8, addend: 0x0, symName: '___27-[QNRTPlayer setSpeakerOn:]_block_invoke', symObjAddr: 0x1B6C, symBinAddr: 0xBAF4, symSize: 0x1B8 }
+  - { offset: 0x788F3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setStatisticInterval:]', symObjAddr: 0x1D24, symBinAddr: 0xBCAC, symSize: 0x80 }
+  - { offset: 0x7894E, size: 0x8, addend: 0x0, symName: '___35-[QNRTPlayer setStatisticInterval:]_block_invoke', symObjAddr: 0x1DA4, symBinAddr: 0xBD2C, symSize: 0xD0 }
+  - { offset: 0x789EB, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer takeScreenshotCallback:]', symObjAddr: 0x1E74, symBinAddr: 0xBDFC, symSize: 0xAC }
+  - { offset: 0x78A4D, size: 0x8, addend: 0x0, symName: '___37-[QNRTPlayer takeScreenshotCallback:]_block_invoke', symObjAddr: 0x1F20, symBinAddr: 0xBEA8, symSize: 0x1C4 }
+  - { offset: 0x78B24, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b, symObjAddr: 0x20E4, symBinAddr: 0xC06C, symSize: 0x34 }
+  - { offset: 0x78B4D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setJitterBufferMinDelay:]', symObjAddr: 0x2118, symBinAddr: 0xC0A0, symSize: 0x1F4 }
+  - { offset: 0x78C66, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer dealloc]', symObjAddr: 0x230C, symBinAddr: 0xC294, symSize: 0x13C }
+  - { offset: 0x78CE4, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playWhepStreamRequestStreamURL:offerSDP:supportHttps:completionHandler:]', symObjAddr: 0x2448, symBinAddr: 0xC3D0, symSize: 0x260 }
+  - { offset: 0x78DEA, size: 0x8, addend: 0x0, symName: '___85-[QNRTPlayer playWhepStreamRequestStreamURL:offerSDP:supportHttps:completionHandler:]_block_invoke', symObjAddr: 0x26A8, symBinAddr: 0xC630, symSize: 0x124 }
+  - { offset: 0x78E8D, size: 0x8, addend: 0x0, symName: '___85-[QNRTPlayer playWhepStreamRequestStreamURL:offerSDP:supportHttps:completionHandler:]_block_invoke_2', symObjAddr: 0x27CC, symBinAddr: 0xC754, symSize: 0x4B4 }
+  - { offset: 0x791B8, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56b, symObjAddr: 0x2C80, symBinAddr: 0xCC08, symSize: 0x44 }
+  - { offset: 0x791E1, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s, symObjAddr: 0x2CC4, symBinAddr: 0xCC4C, symSize: 0x38 }
+  - { offset: 0x79200, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer disconnectWhepStreamRequest:]', symObjAddr: 0x2CFC, symBinAddr: 0xCC84, symSize: 0x108 }
+  - { offset: 0x79267, size: 0x8, addend: 0x0, symName: '___42-[QNRTPlayer disconnectWhepStreamRequest:]_block_invoke', symObjAddr: 0x2E04, symBinAddr: 0xCD8C, symSize: 0xEC }
+  - { offset: 0x79306, size: 0x8, addend: 0x0, symName: '___42-[QNRTPlayer disconnectWhepStreamRequest:]_block_invoke_2', symObjAddr: 0x2EF0, symBinAddr: 0xCE78, symSize: 0x2E0 }
+  - { offset: 0x794B7, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s, symObjAddr: 0x31D0, symBinAddr: 0xD158, symSize: 0x30 }
+  - { offset: 0x794E0, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s, symObjAddr: 0x3200, symBinAddr: 0xD188, symSize: 0x30 }
+  - { offset: 0x794FF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playRTCStreamRequestStreamURL:offerSDP:clientip:supportHttps:completionHandler:]', symObjAddr: 0x3230, symBinAddr: 0xD1B8, symSize: 0x3AC }
+  - { offset: 0x79627, size: 0x8, addend: 0x0, symName: '___93-[QNRTPlayer playRTCStreamRequestStreamURL:offerSDP:clientip:supportHttps:completionHandler:]_block_invoke', symObjAddr: 0x35DC, symBinAddr: 0xD564, symSize: 0x124 }
+  - { offset: 0x796CA, size: 0x8, addend: 0x0, symName: '___93-[QNRTPlayer playRTCStreamRequestStreamURL:offerSDP:clientip:supportHttps:completionHandler:]_block_invoke_2', symObjAddr: 0x3700, symBinAddr: 0xD688, symSize: 0x5D8 }
+  - { offset: 0x799A4, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer createOffer:completionHandler:]', symObjAddr: 0x3CD8, symBinAddr: 0xDC60, symSize: 0xC8 }
+  - { offset: 0x799FA, size: 0x8, addend: 0x0, symName: '___44-[QNRTPlayer createOffer:completionHandler:]_block_invoke', symObjAddr: 0x3DA0, symBinAddr: 0xDD28, symSize: 0x1C0 }
+  - { offset: 0x79B02, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0x3F60, symBinAddr: 0xDEE8, symSize: 0x10 }
+  - { offset: 0x79B2B, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setRemoteWithSDP:]', symObjAddr: 0x3F70, symBinAddr: 0xDEF8, symSize: 0x128 }
+  - { offset: 0x79B92, size: 0x8, addend: 0x0, symName: '___31-[QNRTPlayer setRemoteWithSDP:]_block_invoke', symObjAddr: 0x4098, symBinAddr: 0xE020, symSize: 0x320 }
+  - { offset: 0x79CD7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer createSubscribePeerConnection]', symObjAddr: 0x43B8, symBinAddr: 0xE340, symSize: 0x124 }
+  - { offset: 0x79D55, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer closeSubscribePeerConnection]', symObjAddr: 0x44DC, symBinAddr: 0xE464, symSize: 0x158 }
+  - { offset: 0x79E2D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer defaultRTCConfiguration]', symObjAddr: 0x4634, symBinAddr: 0xE5BC, symSize: 0x5C }
+  - { offset: 0x79E72, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer defaultSDPConstraints]', symObjAddr: 0x4690, symBinAddr: 0xE618, symSize: 0xAC }
+  - { offset: 0x79EC8, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer defaultPeerConnectionConstraints]', symObjAddr: 0x473C, symBinAddr: 0xE6C4, symSize: 0x50 }
+  - { offset: 0x79F1E, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer resetAll]', symObjAddr: 0x478C, symBinAddr: 0xE714, symSize: 0x15C }
+  - { offset: 0x79F52, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didChangeSignalingState:]', symObjAddr: 0x48E8, symBinAddr: 0xE870, symSize: 0xAC }
+  - { offset: 0x79FEE, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didAddStream:]', symObjAddr: 0x4994, symBinAddr: 0xE91C, symSize: 0x15C }
+  - { offset: 0x7A0AB, size: 0x8, addend: 0x0, symName: '___42-[QNRTPlayer peerConnection:didAddStream:]_block_invoke', symObjAddr: 0x4AF0, symBinAddr: 0xEA78, symSize: 0x338 }
+  - { offset: 0x7A17E, size: 0x8, addend: 0x0, symName: '___42-[QNRTPlayer peerConnection:didAddStream:]_block_invoke_2', symObjAddr: 0x4E28, symBinAddr: 0xEDB0, symSize: 0x15C }
+  - { offset: 0x7A1C0, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didRemoveStream:]', symObjAddr: 0x4F84, symBinAddr: 0xEF0C, symSize: 0xC0 }
+  - { offset: 0x7A25C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnectionShouldNegotiate:]', symObjAddr: 0x5044, symBinAddr: 0xEFCC, symSize: 0xA4 }
+  - { offset: 0x7A2E7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didChangeIceConnectionState:]', symObjAddr: 0x50E8, symBinAddr: 0xF070, symSize: 0xB4 }
+  - { offset: 0x7A35A, size: 0x8, addend: 0x0, symName: '___57-[QNRTPlayer peerConnection:didChangeIceConnectionState:]_block_invoke', symObjAddr: 0x519C, symBinAddr: 0xF124, symSize: 0x55C }
+  - { offset: 0x7A524, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didChangeIceGatheringState:]', symObjAddr: 0x56F8, symBinAddr: 0xF680, symSize: 0xAC }
+  - { offset: 0x7A5C0, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didGenerateIceCandidate:]', symObjAddr: 0x57A4, symBinAddr: 0xF72C, symSize: 0xC0 }
+  - { offset: 0x7A65C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didRemoveIceCandidates:]', symObjAddr: 0x5864, symBinAddr: 0xF7EC, symSize: 0xD4 }
+  - { offset: 0x7A6F8, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer peerConnection:didOpenDataChannel:]', symObjAddr: 0x5938, symBinAddr: 0xF8C0, symSize: 0xC0 }
+  - { offset: 0x7A794, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoRender:width:height:]', symObjAddr: 0x59F8, symBinAddr: 0xF980, symSize: 0x34 }
+  - { offset: 0x7A7F7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoRender:didGetPixelBuffer:]', symObjAddr: 0x5A2C, symBinAddr: 0xF9B4, symSize: 0x340 }
+  - { offset: 0x7A911, size: 0x8, addend: 0x0, symName: '___44-[QNRTPlayer videoRender:didGetPixelBuffer:]_block_invoke', symObjAddr: 0x5D6C, symBinAddr: 0xFCF4, symSize: 0x120 }
+  - { offset: 0x7A99D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer audioTrack:didGetAudioBuffer:bitsPerSample:sampleRate:]', symObjAddr: 0x5E8C, symBinAddr: 0xFE14, symSize: 0x1D4 }
+  - { offset: 0x7AA4F, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer startStatisticTimer]', symObjAddr: 0x6060, symBinAddr: 0xFFE8, symSize: 0xA4 }
+  - { offset: 0x7AA99, size: 0x8, addend: 0x0, symName: '___33-[QNRTPlayer startStatisticTimer]_block_invoke', symObjAddr: 0x6104, symBinAddr: 0x1008C, symSize: 0xB0 }
+  - { offset: 0x7AADB, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer stopStatisticTimer]', symObjAddr: 0x61B4, symBinAddr: 0x1013C, symSize: 0x60 }
+  - { offset: 0x7AB0F, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer statisticTimerFired]', symObjAddr: 0x6214, symBinAddr: 0x1019C, symSize: 0x74 }
+  - { offset: 0x7AB59, size: 0x8, addend: 0x0, symName: '___33-[QNRTPlayer statisticTimerFired]_block_invoke', symObjAddr: 0x6288, symBinAddr: 0x10210, symSize: 0x98 }
+  - { offset: 0x7AB9B, size: 0x8, addend: 0x0, symName: '___33-[QNRTPlayer statisticTimerFired]_block_invoke_2', symObjAddr: 0x6320, symBinAddr: 0x102A8, symSize: 0x5A8 }
+  - { offset: 0x7ACD9, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer handleMediaStatsReport:trackStatistics:lastBoundStatistics:lastTrackStatistics:type:]', symObjAddr: 0x68C8, symBinAddr: 0x10850, symSize: 0x3E4 }
+  - { offset: 0x7AE42, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer combineMediaStatisticsFromStats:isOut:]', symObjAddr: 0x6CAC, symBinAddr: 0x10C34, symSize: 0x614 }
+  - { offset: 0x7AF45, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer convertI420PixelBuffer:toNV12PixelBuffer:]', symObjAddr: 0x72C0, symBinAddr: 0x11248, symSize: 0x358 }
+  - { offset: 0x7B3A1, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer convertFrame:]', symObjAddr: 0x7618, symBinAddr: 0x115A0, symSize: 0x13C }
+  - { offset: 0x7B4C7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoView:didChangeVideoSize:]', symObjAddr: 0x7754, symBinAddr: 0x116DC, symSize: 0x9C }
+  - { offset: 0x7B55F, size: 0x8, addend: 0x0, symName: '+[QNRTPlayer enableFileLogging]', symObjAddr: 0x77F0, symBinAddr: 0x11778, symSize: 0xC }
+  - { offset: 0x7B58F, size: 0x8, addend: 0x0, symName: '+[QNRTPlayer versionInfo]', symObjAddr: 0x77FC, symBinAddr: 0x11784, symSize: 0xC }
+  - { offset: 0x7B5C3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setupPictureInPicture]', symObjAddr: 0x7808, symBinAddr: 0x11790, symSize: 0x180 }
+  - { offset: 0x7B5F7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer startPictureInPicture]', symObjAddr: 0x7988, symBinAddr: 0x11910, symSize: 0xF0 }
+  - { offset: 0x7B675, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer stopPictureInPicture]', symObjAddr: 0x7A78, symBinAddr: 0x11A00, symSize: 0x120 }
+  - { offset: 0x7B6F3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer isSupportPictureInPicture]', symObjAddr: 0x7B98, symBinAddr: 0x11B20, symSize: 0xC }
+  - { offset: 0x7B727, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setCanStartPictureInPictureAutomaticallyFromInline:]', symObjAddr: 0x7BA4, symBinAddr: 0x11B2C, symSize: 0x88 }
+  - { offset: 0x7B76C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer pictureInPictureControllerWillStartPictureInPicture:]', symObjAddr: 0x7C2C, symBinAddr: 0x11BB4, symSize: 0x88 }
+  - { offset: 0x7B7F3, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer pictureInPictureControllerDidStartPictureInPicture:]', symObjAddr: 0x7CB4, symBinAddr: 0x11C3C, symSize: 0xB4 }
+  - { offset: 0x7B838, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer pictureInPictureControllerDidStopPictureInPicture:]', symObjAddr: 0x7D68, symBinAddr: 0x11CF0, symSize: 0xC0 }
+  - { offset: 0x7B87D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer pictureInPictureController:failedToStartPictureInPictureWithError:]', symObjAddr: 0x7E28, symBinAddr: 0x11DB0, symSize: 0xC0 }
+  - { offset: 0x7B915, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer pictureInPictureController:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:]', symObjAddr: 0x7EE8, symBinAddr: 0x11E70, symSize: 0x128 }
+  - { offset: 0x7B9B1, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer handleAudioSessionChange:]', symObjAddr: 0x8010, symBinAddr: 0x11F98, symSize: 0xB0 }
+  - { offset: 0x7BA44, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer checkAudioSessionCategory]', symObjAddr: 0x80C0, symBinAddr: 0x12048, symSize: 0x13C }
+  - { offset: 0x7BAD8, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer pictureInPictureControler:playingStateChanged:]', symObjAddr: 0x81FC, symBinAddr: 0x12184, symSize: 0x48 }
+  - { offset: 0x7BB2A, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer delegate]', symObjAddr: 0x8244, symBinAddr: 0x121CC, symSize: 0x18 }
+  - { offset: 0x7BB61, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setDelegate:]', symObjAddr: 0x825C, symBinAddr: 0x121E4, symSize: 0xC }
+  - { offset: 0x7BBA2, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playState]', symObjAddr: 0x8268, symBinAddr: 0x121F0, symSize: 0x8 }
+  - { offset: 0x7BBD9, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setPlayState:]', symObjAddr: 0x8270, symBinAddr: 0x121F8, symSize: 0x8 }
+  - { offset: 0x7BC16, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer isPlaying]', symObjAddr: 0x8278, symBinAddr: 0x12200, symSize: 0x8 }
+  - { offset: 0x7BC4D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setIsPlaying:]', symObjAddr: 0x8280, symBinAddr: 0x12208, symSize: 0x8 }
+  - { offset: 0x7BC88, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playUrl]', symObjAddr: 0x8288, symBinAddr: 0x12210, symSize: 0x8 }
+  - { offset: 0x7BCBF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setPlayUrl:]', symObjAddr: 0x8290, symBinAddr: 0x12218, symSize: 0x8 }
+  - { offset: 0x7BCFE, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer volume]', symObjAddr: 0x8298, symBinAddr: 0x12220, symSize: 0x8 }
+  - { offset: 0x7BD33, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer width]', symObjAddr: 0x82A0, symBinAddr: 0x12228, symSize: 0x8 }
+  - { offset: 0x7BD68, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setWidth:]', symObjAddr: 0x82A8, symBinAddr: 0x12230, symSize: 0x8 }
+  - { offset: 0x7BDA6, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer height]', symObjAddr: 0x82B0, symBinAddr: 0x12238, symSize: 0x8 }
+  - { offset: 0x7BDDB, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setHeight:]', symObjAddr: 0x82B8, symBinAddr: 0x12240, symSize: 0x8 }
+  - { offset: 0x7BE19, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer statisticInterval]', symObjAddr: 0x82C0, symBinAddr: 0x12248, symSize: 0x8 }
+  - { offset: 0x7BE50, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer playView]', symObjAddr: 0x82C8, symBinAddr: 0x12250, symSize: 0x8 }
+  - { offset: 0x7BE87, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setPlayView:]', symObjAddr: 0x82D0, symBinAddr: 0x12258, symSize: 0xC }
+  - { offset: 0x7BEC8, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer factory]', symObjAddr: 0x82DC, symBinAddr: 0x12264, symSize: 0x8 }
+  - { offset: 0x7BEFF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setFactory:]', symObjAddr: 0x82E4, symBinAddr: 0x1226C, symSize: 0xC }
+  - { offset: 0x7BF40, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer subscribePeerConnection]', symObjAddr: 0x82F0, symBinAddr: 0x12278, symSize: 0x8 }
+  - { offset: 0x7BF77, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setSubscribePeerConnection:]', symObjAddr: 0x82F8, symBinAddr: 0x12280, symSize: 0xC }
+  - { offset: 0x7BFB8, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer subscribePeerConnectionState]', symObjAddr: 0x8304, symBinAddr: 0x1228C, symSize: 0x8 }
+  - { offset: 0x7BFEF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setSubscribePeerConnectionState:]', symObjAddr: 0x830C, symBinAddr: 0x12294, symSize: 0x8 }
+  - { offset: 0x7C02C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoRender]', symObjAddr: 0x8314, symBinAddr: 0x1229C, symSize: 0x8 }
+  - { offset: 0x7C063, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoRender:]', symObjAddr: 0x831C, symBinAddr: 0x122A4, symSize: 0xC }
+  - { offset: 0x7C0A4, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer operationQueue]', symObjAddr: 0x8328, symBinAddr: 0x122B0, symSize: 0x8 }
+  - { offset: 0x7C0DB, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setOperationQueue:]', symObjAddr: 0x8330, symBinAddr: 0x122B8, symSize: 0xC }
+  - { offset: 0x7C11C, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer subStatisticInterval]', symObjAddr: 0x833C, symBinAddr: 0x122C4, symSize: 0x8 }
+  - { offset: 0x7C153, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setSubStatisticInterval:]', symObjAddr: 0x8344, symBinAddr: 0x122CC, symSize: 0x8 }
+  - { offset: 0x7C190, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer statisticTimer]', symObjAddr: 0x834C, symBinAddr: 0x122D4, symSize: 0x8 }
+  - { offset: 0x7C1C7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setStatisticTimer:]', symObjAddr: 0x8354, symBinAddr: 0x122DC, symSize: 0xC }
+  - { offset: 0x7C208, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer audioLastRtcStats]', symObjAddr: 0x8360, symBinAddr: 0x122E8, symSize: 0x8 }
+  - { offset: 0x7C23F, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setAudioLastRtcStats:]', symObjAddr: 0x8368, symBinAddr: 0x122F0, symSize: 0xC }
+  - { offset: 0x7C280, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoLastRtcStats]', symObjAddr: 0x8374, symBinAddr: 0x122FC, symSize: 0x8 }
+  - { offset: 0x7C2B7, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoLastRtcStats:]', symObjAddr: 0x837C, symBinAddr: 0x12304, symSize: 0xC }
+  - { offset: 0x7C2F8, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer audioBitrate]', symObjAddr: 0x8388, symBinAddr: 0x12310, symSize: 0x8 }
+  - { offset: 0x7C32D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setAudioBitrate:]', symObjAddr: 0x8390, symBinAddr: 0x12318, symSize: 0x8 }
+  - { offset: 0x7C36B, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoBitrate]', symObjAddr: 0x8398, symBinAddr: 0x12320, symSize: 0x8 }
+  - { offset: 0x7C3A0, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoBitrate:]', symObjAddr: 0x83A0, symBinAddr: 0x12328, symSize: 0x8 }
+  - { offset: 0x7C3DE, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoFrameRate]', symObjAddr: 0x83A8, symBinAddr: 0x12330, symSize: 0x8 }
+  - { offset: 0x7C415, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoFrameRate:]', symObjAddr: 0x83B0, symBinAddr: 0x12338, symSize: 0x8 }
+  - { offset: 0x7C452, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer audioTrack]', symObjAddr: 0x83B8, symBinAddr: 0x12340, symSize: 0x8 }
+  - { offset: 0x7C489, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setAudioTrack:]', symObjAddr: 0x83C0, symBinAddr: 0x12348, symSize: 0xC }
+  - { offset: 0x7C4CA, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer videoTrack]', symObjAddr: 0x83CC, symBinAddr: 0x12354, symSize: 0x8 }
+  - { offset: 0x7C501, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setVideoTrack:]', symObjAddr: 0x83D4, symBinAddr: 0x1235C, symSize: 0xC }
+  - { offset: 0x7C542, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer shouldReportFirstAudioFrame]', symObjAddr: 0x83E0, symBinAddr: 0x12368, symSize: 0x8 }
+  - { offset: 0x7C579, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setShouldReportFirstAudioFrame:]', symObjAddr: 0x83E8, symBinAddr: 0x12370, symSize: 0x8 }
+  - { offset: 0x7C5B4, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer shouldReportFirstVideoFrame]', symObjAddr: 0x83F0, symBinAddr: 0x12378, symSize: 0x8 }
+  - { offset: 0x7C5EB, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setShouldReportFirstVideoFrame:]', symObjAddr: 0x83F8, symBinAddr: 0x12380, symSize: 0x8 }
+  - { offset: 0x7C626, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer outputSpeaker]', symObjAddr: 0x8400, symBinAddr: 0x12388, symSize: 0x8 }
+  - { offset: 0x7C65D, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setOutputSpeaker:]', symObjAddr: 0x8408, symBinAddr: 0x12390, symSize: 0x8 }
+  - { offset: 0x7C698, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer location]', symObjAddr: 0x8410, symBinAddr: 0x12398, symSize: 0x8 }
+  - { offset: 0x7C6CF, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setLocation:]', symObjAddr: 0x8418, symBinAddr: 0x123A0, symSize: 0x8 }
+  - { offset: 0x7C70E, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer resultCallback]', symObjAddr: 0x8420, symBinAddr: 0x123A8, symSize: 0x8 }
+  - { offset: 0x7C745, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setResultCallback:]', symObjAddr: 0x8428, symBinAddr: 0x123B0, symSize: 0x8 }
+  - { offset: 0x7C784, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer pipController]', symObjAddr: 0x8430, symBinAddr: 0x123B8, symSize: 0x8 }
+  - { offset: 0x7C7BB, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setPipController:]', symObjAddr: 0x8438, symBinAddr: 0x123C0, symSize: 0xC }
+  - { offset: 0x7C7FC, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer pause]', symObjAddr: 0x8444, symBinAddr: 0x123CC, symSize: 0x8 }
+  - { offset: 0x7C833, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer setPause:]', symObjAddr: 0x844C, symBinAddr: 0x123D4, symSize: 0x8 }
+  - { offset: 0x7C86E, size: 0x8, addend: 0x0, symName: '-[QNRTPlayer .cxx_destruct]', symObjAddr: 0x8454, symBinAddr: 0x123DC, symSize: 0xC8 }
+  - { offset: 0x7D841, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController initWithDisplayView:]', symObjAddr: 0x0, symBinAddr: 0x124A4, symSize: 0x138 }
+  - { offset: 0x7D96D, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController initWithDisplayView:]', symObjAddr: 0x0, symBinAddr: 0x124A4, symSize: 0x138 }
+  - { offset: 0x7D9D3, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController releasePictureInPicture]', symObjAddr: 0x138, symBinAddr: 0x125DC, symSize: 0x44 }
+  - { offset: 0x7DA06, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController pictureInPictureController:didTransitionToRenderSize:]', symObjAddr: 0x17C, symBinAddr: 0x12620, symSize: 0x4 }
+  - { offset: 0x7DA4D, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController pictureInPictureController:setPlaying:]', symObjAddr: 0x180, symBinAddr: 0x12624, symSize: 0x8 }
+  - { offset: 0x7DA9A, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController pictureInPictureController:skipByInterval:completionHandler:]', symObjAddr: 0x188, symBinAddr: 0x1262C, symSize: 0x4 }
+  - { offset: 0x7DAED, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController pictureInPictureControllerIsPlaybackPaused:]', symObjAddr: 0x18C, symBinAddr: 0x12630, symSize: 0xB0 }
+  - { offset: 0x7DB30, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController pictureInPictureControllerTimeRangeForPlayback:]', symObjAddr: 0x23C, symBinAddr: 0x126E0, symSize: 0x5C }
+  - { offset: 0x7DBED, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController delegate]', symObjAddr: 0x298, symBinAddr: 0x1273C, symSize: 0x18 }
+  - { offset: 0x7DC24, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController setDelegate:]', symObjAddr: 0x2B0, symBinAddr: 0x12754, symSize: 0xC }
+  - { offset: 0x7DC65, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController pipController]', symObjAddr: 0x2BC, symBinAddr: 0x12760, symSize: 0x8 }
+  - { offset: 0x7DC9C, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController isPlaying]', symObjAddr: 0x2C4, symBinAddr: 0x12768, symSize: 0x8 }
+  - { offset: 0x7DCD3, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController setIsPlaying:]', symObjAddr: 0x2CC, symBinAddr: 0x12770, symSize: 0x8 }
+  - { offset: 0x7DD0E, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController displayView]', symObjAddr: 0x2D4, symBinAddr: 0x12778, symSize: 0x8 }
+  - { offset: 0x7DD45, size: 0x8, addend: 0x0, symName: '-[QNPictureInPictureController .cxx_destruct]', symObjAddr: 0x2DC, symBinAddr: 0x12780, symSize: 0x38 }
 ...

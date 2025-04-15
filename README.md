@@ -11,11 +11,12 @@
 - [x] 支持纯音频或纯视频播放
 - [x] 支持自定义音视频处理
 - [x] 支持苹果 ATS 安全标准
+- [x] 支持画中画播放
 
 ## 系统要求
 
 - iOS Target : >= iOS 12
-- iOS Device : >= iPhone 5s
+- iOS Device : >= iPhone 6s
 
 ## 安装方法
 

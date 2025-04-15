@@ -1150,8 +1150,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 8.0";
@@ -1381,6 +1381,21 @@
 			};
 			name = Release;
 		};
+		168F80D7C207FF978A0A1C19CF7A752B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445B727FBA7A9673E3CCF185F3007F92 /* QNRTPlayerKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1460,19 +1475,6 @@
 			};
 			name = Debug;
 		};
-		32AD7484114EA9C1247C61437A9563E0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0B27C6BAE1A1A87B0F905F8B3FB9978 /* QNRTPlayerKit.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		41F2AC53A3555D7CBD7146DFDC251388 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4790B4DD07624C0141110579C7E7C95 /* Pods-QNRTNiuLiving.debug.xcconfig */;
@@ -1515,19 +1517,19 @@
 			};
 			name = Debug;
 		};
-		54CD185C04D72C08F4C99EDC8F7B2674 /* Release */ = {
+		4E393FDD05C8DA5541E6327F5A0282D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 445B727FBA7A9673E3CCF185F3007F92 /* QNRTPlayerKit.release.xcconfig */;
+			baseConfigurationReference = D0B27C6BAE1A1A87B0F905F8B3FB9978 /* QNRTPlayerKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		B1BE7A17CDD0512C5B5C077853DF3091 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1677,8 +1679,8 @@
 		02E444AFCEA0250BBF7BFA9CE459BF4D /* Build configuration list for PBXAggregateTarget "QNRTPlayerKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32AD7484114EA9C1247C61437A9563E0 /* Debug */,
-				54CD185C04D72C08F4C99EDC8F7B2674 /* Release */,
+				4E393FDD05C8DA5541E6327F5A0282D9 /* Debug */,
+				168F80D7C207FF978A0A1C19CF7A752B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

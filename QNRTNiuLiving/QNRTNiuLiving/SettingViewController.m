@@ -21,20 +21,20 @@
     // Do any additional setup after loading the view from its nib.
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"settingDic"] == nil)  {
         self.settingDic = [[NSMutableDictionary alloc] initWithDictionary:@{@"isQuic":@(YES),
-                                 @"isAVFoundation":@(NO),
-                                 @"isVideoQualityPreinstall":@(YES),
-                                 @"isEncodePreinstall":@(YES),
-                                 @"isQualityFirst":@(YES),
-                                 @"isAdaptiveBitrate":@(YES),
-                                 @"isDebug":@(YES),
-                                 @"videoQualityPreinstall":@(5),
-                                 @"encodeSizePreinstall":@(1),
-                                 @"fps":@(24),
-                                 @"bitrate":@(1000),
-                                 @"maxKeyframe":@(72),
-                                 @"width":@(480),
-                                 @"height":@(848)}];
-    }else {
+                                                                            @"isAVFoundation":@(NO),
+                                                                            @"isVideoQualityPreinstall":@(YES),
+                                                                            @"isEncodePreinstall":@(YES),
+                                                                            @"isQualityFirst":@(YES),
+                                                                            @"isAdaptiveBitrate":@(YES),
+                                                                            @"isDebug":@(YES),
+                                                                            @"videoQualityPreinstall":@(5),
+                                                                            @"encodeSizePreinstall":@(1),
+                                                                            @"fps":@(24),
+                                                                            @"bitrate":@(1000),
+                                                                            @"maxKeyframe":@(72),
+                                                                            @"width":@(480),
+                                                                            @"height":@(848)}];
+    } else {
         self.settingDic = [[NSMutableDictionary alloc] initWithDictionary:[[NSUserDefaults standardUserDefaults] objectForKey:@"settingDic"]];
     }
     [self setupUI];
@@ -244,12 +244,10 @@
     if (menu == self.videoQualityView) {
         self.videoQualityView.mainBtn.tag = number;
     }
-    
-    
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-     [self.view endEditing:YES];
+    [self.view endEditing:YES];
 }
 
 - (void)didReceiveMemoryWarning {
