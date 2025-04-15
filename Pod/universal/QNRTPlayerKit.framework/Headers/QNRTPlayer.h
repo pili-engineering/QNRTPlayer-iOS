@@ -6,10 +6,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVKit/AVKit.h>
 #import "QNRTTypeDefines.h"
 
 @class QNRTPlayer;
 @class QNRTVideoView;
+@class QNSampleBufferRender;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -81,6 +83,37 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)RTPlayer:(QNRTPlayer *)player firstSourceDidDecode:(QNRTSourceKind )kind;
 
+
+/*!
+ * @abstract 画中画开启
+ *
+ * @param player QNRTPlayer
+ * @param pictureInPictureController 画中画控制器
+ *
+ * @since v1.0.6
+ */
+- (void)RTPlayer:(QNRTPlayer *)player  didStartPictureInPicture:(AVPictureInPictureController *)pictureInPictureController;
+
+/*!
+ * @abstract 画中画停止。
+ *
+ * @param player QNRTPlayer
+ * @param pictureInPictureController 画中画控制器
+ *
+ * @since v1.0.6
+ */
+- (void)RTPlayer:(QNRTPlayer *)player didStopPictureInPicture:(AVPictureInPictureController *)pictureInPictureController;
+
+/*!
+ * @abstract 可以实现这种方法，在画中画停止之前恢复用户界面。
+ *
+ * @param player QNRTPlayer
+ *
+ * @param completionHandler 委托在还原后需要调用的完成处理程序。
+ *
+ * @since v1.0.6
+ */
+- (void)RTPlayer:(QNRTPlayer *)player restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:(void (^)(BOOL restored))completionHandler;
 @end
 
 @interface QNRTPlayer : NSObject
@@ -226,6 +259,36 @@ NS_ASSUME_NONNULL_BEGIN
  * @since v1.0.4
  */
 - (void)setJitterBufferMinDelay:(double)jitterBufferMinDelay;
+
+/*!
+ * @abstract 是否支持画中画 （iOS >= 15.0、iPad  >= 9.0  ）
+ *
+ * @since v1.0.6
+ */
+- (BOOL)isSupportPictureInPicture;
+
+/*!
+ * @abstract 开启画中画
+ *
+ * @since v1.0.6
+ */
+- (void)startPictureInPicture;
+
+/*!
+ * @abstract 关闭画中画
+ *
+ * @since v1.0.6
+ */
+- (void)stopPictureInPicture;
+
+/*!
+ * @abstract 画中画是否自动开启
+ * 默认情况下，如果 playView 是全屏的，或者我们将 setCanStartPictureInPictureAutomaticallyFromInline 设置为 YES，则当用户移动到后台时，画中画 开始
+ *
+ * @since v1.0.6
+ */
+- (void)setCanStartPictureInPictureAutomaticallyFromInline:(BOOL)isAuto;
+
 
 @end
 

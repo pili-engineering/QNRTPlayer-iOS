@@ -14,6 +14,9 @@
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, strong) UISegmentedControl *segmentedControl;
 @property (nonatomic, strong) NSArray *valueArray;
+
+@property (weak, nonatomic) IBOutlet UIButton *pipBtn;
+
 @end
 
 @implementation PLPlayerViewController
@@ -73,7 +76,7 @@
 
 - (void)setupPlayer:(NSString *)playURL {
     self.player = [[QNRTPlayer alloc] init];
-    self.player.playView.frame = [UIScreen mainScreen].bounds;
+    self.player.playView.frame = CGRectMake(10, 10, self.view.bounds.size.width - 20, 300);
     self.player.playView.fillMode = QNRTVideoFillModePreserveAspectRatio;
     self.player.statisticInterval = 2;
     [self.view insertSubview:self.player.playView atIndex:0];
@@ -119,6 +122,14 @@
         }
     }];
 }
+- (IBAction)picInPicAction:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if(sender.selected) {
+        [self.player startPictureInPicture];
+    } else {
+        [self.player stopPictureInPicture];
+    }
+}
 
 - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
     if (error) {
@@ -142,9 +153,9 @@
     self.timer = nil;
     if (self.player) {
         [self.player stop];
+        [self.player stopPictureInPicture];
         [self.player.playView removeFromSuperview];
         self.player.delegate = nil;
-        self.player = nil;
     }
     
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -182,7 +193,6 @@
     button.selected = !button.isSelected;
     [self.player muteVideo:button.isSelected];
 }
-
 #pragma mark QNRTPlayerDelegate
 
 - (void)RTPlayer:(QNRTPlayer *)player didFailWithError:(NSError *)error {
@@ -248,6 +258,16 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         NSLog(@"QNRTPlayerDelegate trackDidReceived:%d", (int)kind);
     });
+}
+
+-(void)RTPlayer:(QNRTPlayer *)player didStopPictureInPicture:(AVPictureInPictureController *)pictureInPictureController {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        _pipBtn.selected = NO;
+    });
+}
+
+-(void)RTPlayer:(QNRTPlayer *)player didStartPictureInPicture:(AVPictureInPictureController *)pictureInPictureController{
+    
 }
 
 - (void)showAlertWithMessage:(NSString *)message completion:(void (^)(void))completion {

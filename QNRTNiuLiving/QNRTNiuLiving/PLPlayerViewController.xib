@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,6 +23,7 @@
                 <outlet property="messageView" destination="qkJ-Bq-GDW" id="Lag-DK-Afa"/>
                 <outlet property="muteAudioButton" destination="KwM-SL-cZ3" id="F7u-qH-Suy"/>
                 <outlet property="muteVideoButton" destination="jQC-uF-nKn" id="Gbu-TG-1lG"/>
+                <outlet property="pipBtn" destination="b2W-cP-91A" id="WUX-Cl-3df"/>
                 <outlet property="playButton" destination="mm6-Du-nsQ" id="SDM-YS-4f3"/>
                 <outlet property="reportButton" destination="sDr-YR-3KE" id="pPF-pk-Ig1"/>
                 <outlet property="resolutionLabel" destination="vkH-q9-UAt" id="uYb-vb-Wdc"/>
@@ -86,7 +87,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房间名已复制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ein-Bw-6Rg">
-                            <rect key="frame" x="144.5" y="33" width="86" height="17"/>
+                            <rect key="frame" x="146" y="33" width="83.5" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
@@ -230,6 +231,20 @@
                         <action selector="jitterBufferAction:" destination="-1" eventType="touchUpInside" id="Rn7-r7-clw"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2W-cP-91A">
+                    <rect key="frame" x="10" y="507" width="60" height="30"/>
+                    <color key="backgroundColor" systemColor="separatorColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="fWC-Np-vrA"/>
+                        <constraint firstAttribute="height" constant="30" id="lGf-az-9Eo"/>
+                    </constraints>
+                    <state key="normal" title="画中画">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="picInPicAction:" destination="-1" eventType="touchUpInside" id="6gE-ZL-alU"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
@@ -256,10 +271,12 @@
                 <constraint firstAttribute="trailing" secondItem="MeQ-MQ-8ez" secondAttribute="trailing" constant="20" id="fwd-QE-C1R"/>
                 <constraint firstAttribute="trailing" secondItem="sDr-YR-3KE" secondAttribute="trailing" constant="10" id="gTv-jq-ra7"/>
                 <constraint firstItem="PJV-N3-mOr" firstAttribute="centerY" secondItem="MeQ-MQ-8ez" secondAttribute="centerY" id="p6O-Cn-Cd7"/>
+                <constraint firstItem="b2W-cP-91A" firstAttribute="centerX" secondItem="mm6-Du-nsQ" secondAttribute="centerX" id="pbN-74-n1c"/>
+                <constraint firstItem="mm6-Du-nsQ" firstAttribute="top" secondItem="b2W-cP-91A" secondAttribute="bottom" constant="30" id="tdf-lE-vqz"/>
                 <constraint firstItem="MeQ-MQ-8ez" firstAttribute="leading" secondItem="PJV-N3-mOr" secondAttribute="trailing" constant="20" id="vGK-yr-VkH"/>
                 <constraint firstItem="jQC-uF-nKn" firstAttribute="leading" secondItem="KwM-SL-cZ3" secondAttribute="trailing" constant="20" id="zpB-OX-Fzd"/>
             </constraints>
-            <point key="canvasLocation" x="-71" y="45"/>
+            <point key="canvasLocation" x="-71.200000000000003" y="44.527736131934034"/>
         </view>
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="E8o-2y-7zY">
             <rect key="frame" x="0.0" y="0.0" width="75" height="73"/>

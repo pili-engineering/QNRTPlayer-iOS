@@ -39,6 +39,11 @@
 	<string>若不允许，您将无法发起带有声音的直播</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>若不允许，您将无法访问本地相册来播放</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>bluetooth-central</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
